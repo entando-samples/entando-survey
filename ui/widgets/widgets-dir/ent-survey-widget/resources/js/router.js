@@ -2,8 +2,6 @@ import { useAuthStore } from "@/stores/auth";
 import LoginPage from "@/views/auth/Login.vue";
 import LogoutPage from "@/views/auth/Logout.vue";
 import ResetPage from "@/views/auth/Reset.vue";
-import UserIndexPage from "@/views/users/Index.vue";
-import UserFormPage from "@/views/users/Form.vue";
 import DocumentFormPage from "@/views/documents/Form.vue";
 import DocumentIndexPage from "@/views/documents/Index.vue";
 import PathologyFormPage from "@/views/pathologies/Form.vue";
@@ -32,7 +30,6 @@ import PatientSurveyDetailPage from "@/views/patients/show/SurveyDetail.vue";
 import FaqIndexPage from "@/views/faq/Index.vue";
 import FaqFormPage from "@/views/faq/Form.vue";
 import CreditFormPage from "@/views/credit/Form.vue";
-import UserProfile from "@/views/users/Profile.vue";
 import ForgetPassword from "@/views/auth/ForgetPassword.vue";
 import VueRouter from "vue-router";
 
@@ -42,13 +39,6 @@ const auth = {
     reset: ResetPage,
     forgetpassword:ForgetPassword,
 };
-
-const users = {
-    index: UserIndexPage,
-    form: UserFormPage,
-    profile: UserProfile,
-};
-
 
 const patients = {
     index: PatientIndexPage,
@@ -139,27 +129,6 @@ const router = new VueRouter({
                 auth: true,
             },
             children: [
-                {
-                    path: "users",
-                    name: "users.index",
-                    component: users.index,
-                },
-                {
-                    path: "users/create",
-                    name: "users.create",
-                    component: users.form,
-                },
-                //change profile
-                {
-                    path: "change/profile",
-                    name: "user.profile",
-                    component: users.profile,
-                },
-                {
-                    path: "users/:id/edit",
-                    name: "users.edit",
-                    component: users.form,
-                },
                 {
                     path: "patients",
                     name: "patients.index",

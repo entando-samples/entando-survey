@@ -1,7 +1,6 @@
 import client from "@/http";
 import { reactive, ref } from "@vue/composition-api"
 import useDocumentsFilter from "./documentFilters";
-import useUsers from "./users";
 
 export default function usePatients() {
     const loading = ref(false);
@@ -40,7 +39,6 @@ export default function usePatients() {
     }
 
     function getFilters() {
-        const { doctors, getDoctors } = useUsers();
         const { filters: documentFilters, getFilters } = useDocumentsFilter();
 
         getFilters().then(() => filters.pathologies = documentFilters.pathologies);

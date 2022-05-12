@@ -103,7 +103,6 @@
 <script>
 import useDocumentsFilter from "@/compositions/documentFilters";
 import usePatients from "@/compositions/patients";
-import useUsers from "@/compositions/users";
 import { computed, defineComponent, reactive } from "@vue/composition-api";
 import debounce from "lodash/debounce";
 import Vue from "vue";
@@ -120,8 +119,7 @@ export default defineComponent({
       saveMedicalData,
       getMedicalData,
     } = usePatients();
-    const { doctors, getDoctors } = useUsers();
-
+    
     const computedDoctors = computed(() => {
       return (doctors.data || []).map((doctor) => {
         return {
