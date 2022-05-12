@@ -2,8 +2,6 @@ import { useAuthStore } from "@/stores/auth";
 import LoginPage from "@/views/auth/Login.vue";
 import LogoutPage from "@/views/auth/Logout.vue";
 import ResetPage from "@/views/auth/Reset.vue";
-import MessageTopicFormPage from "@/views/message-topics/Form.vue";
-import MessageTopicIndexPage from "@/views/message-topics/Index.vue";
 import QuestionFormPage from "@/views/questions/Form.vue";
 import QuestionIndexPage from "@/views/questions/Index.vue";
 import SurveyIndexPage from "@/views/surveys/Index.vue";
@@ -41,11 +39,6 @@ const questions = {
 const surveys = {
     index: SurveyIndexPage,
     form: SurveyFormPage,
-};
-
-const messageTopics = {
-    index: MessageTopicIndexPage,
-    form: MessageTopicFormPage,
 };
 
 const messages = {
@@ -130,21 +123,6 @@ const router = new VueRouter({
                     path: "surveys/:id",
                     name: "surveys.edit",
                     component: surveys.form,
-                },
-                {
-                    path: "message-topics",
-                    name: "messageTopics.index",
-                    component: messageTopics.index,
-                },
-                {
-                    path: "message-topics/create",
-                    name: "messageTopics.create",
-                    component: messageTopics.form,
-                },
-                {
-                    path: "message-topics/:id/edit",
-                    name: "messageTopics.edit",
-                    component: messageTopics.form,
                 },
                 {
                     path: "messages",
