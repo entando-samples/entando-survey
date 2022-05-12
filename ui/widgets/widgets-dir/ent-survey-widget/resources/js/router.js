@@ -2,10 +2,6 @@ import { useAuthStore } from "@/stores/auth";
 import LoginPage from "@/views/auth/Login.vue";
 import LogoutPage from "@/views/auth/Logout.vue";
 import ResetPage from "@/views/auth/Reset.vue";
-import DocumentFormPage from "@/views/documents/Form.vue";
-import DocumentIndexPage from "@/views/documents/Index.vue";
-import PathologyFormPage from "@/views/pathologies/Form.vue";
-import PathologyIndexPage from "@/views/pathologies/Index.vue";
 import MessageTopicFormPage from "@/views/message-topics/Form.vue";
 import MessageTopicIndexPage from "@/views/message-topics/Index.vue";
 import QuestionFormPage from "@/views/questions/Form.vue";
@@ -24,9 +20,6 @@ import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
 import AuthLayout from "@/views/layouts/AuthLayout.vue";
 import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
-import PatientIndexPage from "@/views/patients/Index.vue";
-import PatientShowPage from "@/views/patients/Show.vue";
-import PatientSurveyDetailPage from "@/views/patients/show/SurveyDetail.vue";
 import FaqIndexPage from "@/views/faq/Index.vue";
 import FaqFormPage from "@/views/faq/Form.vue";
 import CreditFormPage from "@/views/credit/Form.vue";
@@ -38,22 +31,6 @@ const auth = {
     logout: LogoutPage,
     reset: ResetPage,
     forgetpassword:ForgetPassword,
-};
-
-const patients = {
-    index: PatientIndexPage,
-    show: PatientShowPage,
-    surveyShow: PatientSurveyDetailPage,
-};
-
-const pathologies = {
-    index: PathologyIndexPage,
-    form: PathologyFormPage,
-};
-
-const documents = {
-    index: DocumentIndexPage,
-    form: DocumentFormPage,
 };
 
 const questions = {
@@ -129,51 +106,6 @@ const router = new VueRouter({
                 auth: true,
             },
             children: [
-                {
-                    path: "patients",
-                    name: "patients.index",
-                    component: patients.index,
-                },
-                {
-                    path: "patients/:id",
-                    name: "patients.show",
-                    component: patients.show,
-                },
-                {
-                    path: "patients/:patientId/surveys/:surveyId",
-                    name: "patients.surveys.show",
-                    component: patients.surveyShow,
-                },
-                {
-                    path: "pathologies",
-                    name: "pathologies.index",
-                    component: pathologies.index,
-                },
-                {
-                    path: "pathologies/create",
-                    name: "pathologies.create",
-                    component: pathologies.form,
-                },
-                {
-                    path: "pathologies/:id/edit",
-                    name: "pathologies.edit",
-                    component: pathologies.form,
-                },
-                {
-                    path: "documents",
-                    name: "documents.index",
-                    component: documents.index,
-                },
-                {
-                    path: "documents/create",
-                    name: "documents.create",
-                    component: documents.form,
-                },
-                {
-                    path: "documents/:id/edit",
-                    name: "documents.edit",
-                    component: documents.form,
-                },
                 {
                     path: "questions",
                     name: "questions.index",

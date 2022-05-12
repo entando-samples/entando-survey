@@ -62,7 +62,6 @@
 <script>
 import useMessages from "@/compositions/messages";
 import useMessageTopics from "@/compositions/messageTopics";
-import usePatients from "@/compositions/patients";
 import router from "@/router";
 import { computed, defineComponent, reactive } from "@vue/composition-api";
 import debounce from "lodash/debounce";
@@ -71,7 +70,6 @@ import Vue from "vue";
 export default defineComponent({
     name: "MessageFormPage",
     setup(_, { root }) {
-        const { patients, getPatients } = usePatients();
         const { topics, getTopics } = useMessageTopics();
         const { loading, errors, saveMessage } = useMessages();
         const form = reactive({
