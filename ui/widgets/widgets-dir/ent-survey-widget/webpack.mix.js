@@ -8,7 +8,7 @@ mix.alias({
 });
 
 mix.setPublicPath('build')
-    .js("resources/js/app.js", "static/assets/js")
+    .js("resources/js/ent-survey.js", "static/js")
     .sass("resources/css/app.scss", "static/assets/css")
     .html({
         output: '.',

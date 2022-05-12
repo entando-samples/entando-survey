@@ -1,1 +1,1 @@
-import {} from './custom-element/et-app'
+import {} from '../resources/js/ent-survey'
