@@ -61,9 +61,4 @@ Vue.component("b-tabs", Tabs);
 Vue.component("b-tab", Tab);
 Vue.component("err-msg", ErrorMessage);
 
-export default new Vue({
-    el: "#app",
-    render: (h) => h(App),
-    pinia: createPinia(),
-    router,
-});
+export default Vue;
