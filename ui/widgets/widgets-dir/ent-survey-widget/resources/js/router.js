@@ -1,23 +1,16 @@
 import { useAuthStore } from "@/stores/auth";
-import LoginPage from "@/views/auth/Login.vue";
 import LogoutPage from "@/views/auth/Logout.vue";
-import ResetPage from "@/views/auth/Reset.vue";
 import QuestionFormPage from "@/views/questions/Form.vue";
 import QuestionIndexPage from "@/views/questions/Index.vue";
 import SurveyIndexPage from "@/views/surveys/Index.vue";
 import SurveyFormPage from "@/views/surveys/Form.vue";
 import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
-import AuthLayout from "@/views/layouts/AuthLayout.vue";
 import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
-import ForgetPassword from "@/views/auth/ForgetPassword.vue";
 import VueRouter from "vue-router";
 
 const auth = {
-    login: LoginPage,
-    logout: LogoutPage,
-    reset: ResetPage,
-    forgetpassword:ForgetPassword,
+    logout: LogoutPage
 };
 
 const questions = {
@@ -40,34 +33,10 @@ const router = new VueRouter({
     routes: [
         {
             path: "/",
-            component: AuthLayout,
-            meta: {
-                guest: true,
-            },
-            redirect: "login",
-            children: [
-                {
-                    path: "login",
-                    name: "login",
-                    component: auth.login,
-                },
-                {
-                    path: "reset-password",
-                    name: "reset.password",
-                    component: auth.reset,
-                },
-                {
-                    path:"forget/password",
-                    name:"forget.password",
-                    component:auth.forgetpassword,
-                }
-            ],
-        },
-        {
-            path: "/",
             component: AppLayout,
             meta: {
-                auth: true,
+                guest: true,
+                // auth: true,
             },
             children: [
                 {
@@ -116,34 +85,34 @@ const router = new VueRouter({
     ],
 });
 
-router.beforeEach((to, _, next) => {
-    const authStore = useAuthStore();
-    if (to.matched.some((record) => record.meta.auth)) {
-        if (authStore.isAuthenticated) {
-            next();
-        } else {
-            if (to.name === "logout") {
-                next({ name: "login" });
-            } else {
-                next({
-                    name: "login",
-                    query: {
-                        redirect: to.fullPath,
-                    },
-                });
-            }
-        }
-    } else if (to.matched.some((record) => record.meta.guest)) {
-        if (authStore.isAuthenticated) {
-            next({
-                name: "questions",
-            });
-        } else {
-            next();
-        }
-    } else {
-        next();
-    }
-});
+// router.beforeEach((to, _, next) => {
+//     const authStore = useAuthStore();
+//     if (to.matched.some((record) => record.meta.auth)) {
+//         if (authStore.isAuthenticated) {
+//             next();
+//         } else {
+//             if (to.name === "logout") {
+//                 next({ name: "login" });
+//             } else {
+//                 next({
+//                     name: "login",
+//                     query: {
+//                         redirect: to.fullPath,
+//                     },
+//                 });
+//             }
+//         }
+//     } else if (to.matched.some((record) => record.meta.guest)) {
+//         if (authStore.isAuthenticated) {
+//             next({
+//                 name: "questions",
+//             });
+//         } else {
+//             next();
+//         }
+//     } else {
+//         next();
+//     }
+// });
 
 export default router;

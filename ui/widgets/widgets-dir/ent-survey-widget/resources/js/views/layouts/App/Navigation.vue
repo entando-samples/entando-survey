@@ -43,7 +43,6 @@ import NavItem from "./NavItem.vue";
 
 export default defineComponent({
   name: "Navigation",
-  props: ["messageCount"],
   components: { NavItem },
   setup() {
     return {};

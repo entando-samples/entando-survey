@@ -10,6 +10,7 @@ export const useAuthStore = defineStore("user", {
         },
     },
     actions: {
+        //TODO: change this to keyclock logout
         async logout() {
             console.log("logging out....");
             await client.post("logout");
