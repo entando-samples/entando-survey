@@ -29,6 +29,7 @@
         "filepond": "^4.30.3",
         "filepond-plugin-file-validate-type": "^1.2.6",
         "filepond-plugin-image-preview": "^4.6.10",
+        "keycloak-js": "^7.0.1",
         "lodash": "^4.17.19",
         "moment": "^2.29.1",
         "pinia": "^2.0.3",
