@@ -1,6 +1,5 @@
 import { useAuthStore } from "@/stores/auth";
 import LoginPage from "@/views/auth/Login.vue";
-import DashboardPage from "@/views/Dashboard.vue";
 import LogoutPage from "@/views/auth/Logout.vue";
 import ResetPage from "@/views/auth/Reset.vue";
 import UserIndexPage from "@/views/users/Index.vue";
@@ -140,11 +139,6 @@ const router = new VueRouter({
                 auth: true,
             },
             children: [
-                {
-                    path: "dashboard",
-                    name: "dashboard",
-                    component: DashboardPage,
-                },
                 {
                     path: "users",
                     name: "users.index",
@@ -356,7 +350,7 @@ router.beforeEach((to, _, next) => {
     } else if (to.matched.some((record) => record.meta.guest)) {
         if (authStore.isAuthenticated) {
             next({
-                name: "dashboard",
+                name: "questions",
             });
         } else {
             next();
