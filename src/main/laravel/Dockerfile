@@ -1,21 +1,45 @@
-FROM node:16
-ARG SOURCE_ROOT="./src/main/node"
-# Create app directory
-WORKDIR /usr/src/app
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY $SOURCE_ROOT/package*.json ./
+FROM php:7.4-fpm
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
+# Set working directory
+WORKDIR /var/www
 
-# Bundle app source
-COPY $SOURCE_ROOT .
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip
 
-EXPOSE 8081
+# Install node
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+    && apt-get install -y nodejs
 
-CMD [ "node", "bin/www" ]
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Add user for laravel application
+RUN groupadd -g 1000 www
+RUN useradd -u 1000 -ms /bin/bash -g www www
+
+# Copy existing application directory contents
+COPY . /var/www
+
+# Copy existing application directory permissions
+COPY --chown=www:www . /var/www
+
+# Change current user to www
+USER www
+
+# Expose port 9000 and start php-fpm server
+EXPOSE 9000
+
+CMD ["php-fpm"]

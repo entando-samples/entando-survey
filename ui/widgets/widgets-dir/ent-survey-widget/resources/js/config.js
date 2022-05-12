@@ -18,7 +18,7 @@ import router from "./router";
 import moment from "moment";
 import { isString } from "lodash";
 
-console.log('loaded');
+
 Vue.filter("datetime", function (value) {
     if (value) {
         return moment(String(value)).format("MM/DD/YYYY hh:mm");

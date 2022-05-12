@@ -1,0 +1,5158 @@
+[
+    {
+        "order": "1",
+        "protocolQuestion": "Dry mouth",
+        "localizedQuestion": [
+            { "question": "SENSAZIONE DI BOCCA SECCA", "lng": "ita" },
+            { "question": "eng:SENSAZIONE DI BOCCA SECCA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#dry_mouth#1.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la SENSAZIONE DI BOCCA SECCA nel momento PEG-GIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la SENSAZIONE DI BOCCA SECCA nel momento PEG-GIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "2",
+        "protocolQuestion": "Difficulty swallowing",
+        "localizedQuestion": [
+            { "question": "DIFFICOLTÀ A DEGLUTIRE", "lng": "ita" },
+            { "question": "eng:DIFFICOLTÀ A DEGLUTIRE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#difficulty_swallowing#2.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la DIFFICOLTÀ A DEGLUTIRE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la DIFFICOLTÀ A DEGLUTIRE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "3",
+        "protocolQuestion": "Mouth/throat sores",
+        "localizedQuestion": [
+            { "question": "PIAGHE IN BOCCA O IN GOLA", "lng": "ita" },
+            { "question": "eng:PIAGHE IN BOCCA O IN GOLA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#mouth_throat_sores#3.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono state GRAVI le PIAGHE IN BOCCA O IN GOLA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono state GRAVI le PIAGHE IN BOCCA O IN GOLA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "3",
+        "protocolQuestion": "Mouth/throat sores",
+        "localizedQuestion": [
+            { "question": "PIAGHE IN BOCCA O IN GOLA", "lng": "ita" },
+            { "question": "eng:PIAGHE IN BOCCA O IN GOLA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#mouth_throat_sores#3.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura le PIAGHE IN BOCCA O IN GOLA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura le PIAGHE IN BOCCA O IN GOLA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "4",
+        "protocolQuestion": "Cracking at the corners of the mouth (cheilosis/cheilitis)",
+        "localizedQuestion": [
+            {
+                "question": "SCREPOLATURE AGLI ANGOLI DELLA BOCCA",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:SCREPOLATURE AGLI ANGOLI DELLA BOCCA",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#cracking_at_the_corners_of_the_mouth__cheilosis_cheilitis_#4.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono state GRAVI le SCREPOLATURE AGLI ANGOLI DELLA BOCCA, nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono state GRAVI le SCREPOLATURE AGLI ANGOLI DELLA BOCCA, nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "5",
+        "protocolQuestion": "Voice quality changes",
+        "localizedQuestion": [
+            { "question": "MODIFICAZIONI DELLA VOCE", "lng": "ita" },
+            { "question": "eng:MODIFICAZIONI DELLA VOCE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#voice_quality_changes#5.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato MODIFICAZIONI DELLA VOCE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato MODIFICAZIONI DELLA VOCE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "6",
+        "protocolQuestion": "Hoarseness",
+        "localizedQuestion": [
+            { "question": "VOCE RAUCA", "lng": "ita" },
+            { "question": "eng:VOCE RAUCA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#hoarseness#6.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la VOCE RAUCA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la VOCE RAUCA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "7",
+        "protocolQuestion": "Taste changes",
+        "localizedQuestion": [
+            {
+                "question": "DIFFICOLTÀ A SENTIRE IL SAPORE DI CIBI O BEVANDE",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:DIFFICOLTÀ A SENTIRE IL SAPORE DI CIBI O BEVANDE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#taste_changes#7.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la DIFFICOLTÀ A SENTIRE IL SAPORE DI CIBI O BEVANDE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la DIFFICOLTÀ A SENTIRE IL SAPORE DI CIBI O BEVANDE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "8",
+        "protocolQuestion": "Decreased appetite",
+        "localizedQuestion": [
+            { "question": "CALO DELL’APPETITO", "lng": "ita" },
+            { "question": "eng:CALO DELL’APPETITO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#decreased_appetite#8.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il CALO DELL’APPETITO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il CALO DELL’APPETITO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "8",
+        "protocolQuestion": "Decreased appetite",
+        "localizedQuestion": [
+            { "question": "CALO DELL’APPETITO", "lng": "ita" },
+            { "question": "eng:CALO DELL’APPETITO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#decreased_appetite#8.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il CALO DELL’APPETITO HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il CALO DELL’APPETITO HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "9",
+        "protocolQuestion": "Nausea",
+        "localizedQuestion": [
+            {
+                "question": "NAUSEA (SENSO DI MALESSERE ALLO STOMACO)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:NAUSEA (SENSO DI MALESSERE ALLO STOMACO)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#nausea#9.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto NAUSEA (SENSO DI MALESSERE ALLO STO-MACO)?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto NAUSEA (SENSO DI MALESSERE ALLO STO-MACO)?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "9",
+        "protocolQuestion": "Nausea",
+        "localizedQuestion": [
+            {
+                "question": "NAUSEA (SENSO DI MALESSERE ALLO STOMACO)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:NAUSEA (SENSO DI MALESSERE ALLO STOMACO)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#nausea#9.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la NAUSEA (SENSO DI MALESSERE ALLO STOMACO) nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la NAUSEA (SENSO DI MALESSERE ALLO STOMACO) nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "10",
+        "protocolQuestion": "Vomiting",
+        "localizedQuestion": [
+            { "question": "VOMITO", "lng": "ita" },
+            { "question": "eng:VOMITO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#vomiting#10.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto VOMITO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto VOMITO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "10",
+        "protocolQuestion": "Vomiting",
+        "localizedQuestion": [
+            { "question": "VOMITO", "lng": "ita" },
+            { "question": "eng:VOMITO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#vomiting#10.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il VOMITO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il VOMITO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "11",
+        "protocolQuestion": "Heartburn",
+        "localizedQuestion": [
+            { "question": "BRUCIORE DI STOMACO", "lng": "ita" },
+            { "question": "eng:BRUCIORE DI STOMACO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#heartburn#11.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha accusato IL BRUCIORE DI STOMACO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha accusato IL BRUCIORE DI STOMACO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "11",
+        "protocolQuestion": "Heartburn",
+        "localizedQuestion": [
+            { "question": "BRUCIORE DI STOMACO", "lng": "ita" },
+            { "question": "eng:BRUCIORE DI STOMACO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#heartburn#11.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato grave IL BRUCIORE DI STOMACO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato grave IL BRUCIORE DI STOMACO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "12",
+        "protocolQuestion": "Gas",
+        "localizedQuestion": [
+            {
+                "question": "MAGGIOR PRODUZIONE DI ARIA INTESTINALE (FLATULENZA)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:MAGGIOR PRODUZIONE DI ARIA INTESTINALE (FLATULENZA)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#gas#12.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato una MAGGIOR PRODUZIONE DI ARIA INTESTINALE (FLATULENZA)?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato una MAGGIOR PRODUZIONE DI ARIA INTESTINALE (FLATULENZA)?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "13",
+        "protocolQuestion": "Bloating",
+        "localizedQuestion": [
+            { "question": "GONFIORE DELLA PANCIA", "lng": "ita" },
+            { "question": "eng:GONFIORE DELLA PANCIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#bloating#13.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto GONFIORE DELLA PANCIA?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto GONFIORE DELLA PANCIA?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "13",
+        "protocolQuestion": "Bloating",
+        "localizedQuestion": [
+            { "question": "GONFIORE DELLA PANCIA", "lng": "ita" },
+            { "question": "eng:GONFIORE DELLA PANCIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#bloating#13.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il GONFIORE DELLA PANCIA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il GONFIORE DELLA PANCIA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "14",
+        "protocolQuestion": "Hiccups",
+        "localizedQuestion": [
+            { "question": "SINGHIOZZO", "lng": "ita" },
+            { "question": "eng:SINGHIOZZO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#hiccups#14.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto il SINGHIOZZO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto il SINGHIOZZO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "14",
+        "protocolQuestion": "Hiccups",
+        "localizedQuestion": [
+            { "question": "SINGHIOZZO", "lng": "ita" },
+            { "question": "eng:SINGHIOZZO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#hiccups#14.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il SINGHIOZZO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il SINGHIOZZO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "15",
+        "protocolQuestion": "Constipation",
+        "localizedQuestion": [
+            { "question": "STITICHEZZA", "lng": "ita" },
+            { "question": "eng:STITICHEZZA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#constipation#15.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la STITICHEZZA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la STITICHEZZA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "16",
+        "protocolQuestion": "Diarrhea",
+        "localizedQuestion": [
+            { "question": "FECI MOLLI O ACQUOSE (DIARREA)", "lng": "ita" },
+            { "question": "eng:FECI MOLLI O ACQUOSE (DIARREA)", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#diarrhea#16.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha notato FECI MOLLI O ACQUOSE (DIARREA)?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha notato FECI MOLLI O ACQUOSE (DIARREA)?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "17",
+        "protocolQuestion": "Abdominal pain",
+        "localizedQuestion": [
+            { "question": "MAL DI PANCIA", "lng": "ita" },
+            { "question": "eng:MAL DI PANCIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#abdominal_pain#17.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto MAL DI PANCIA?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto MAL DI PANCIA?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "17",
+        "protocolQuestion": "Abdominal pain",
+        "localizedQuestion": [
+            { "question": "MAL DI PANCIA", "lng": "ita" },
+            { "question": "eng:MAL DI PANCIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#abdominal_pain#17.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il MAL DI PANCIA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il MAL DI PANCIA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "17",
+        "protocolQuestion": "Abdominal pain",
+        "localizedQuestion": [
+            { "question": "MAL DI PANCIA", "lng": "ita" },
+            { "question": "eng:MAL DI PANCIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#abdominal_pain#17.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il MAL DI PANCIA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il MAL DI PANCIA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "18",
+        "protocolQuestion": "Fecal incontinence",
+        "localizedQuestion": [
+            { "question": "PERDITE DI FECI", "lng": "ita" },
+            { "question": "eng:PERDITE DI FECI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#fecal_incontinence#18.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto PERDITE DI FECI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto PERDITE DI FECI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "18",
+        "protocolQuestion": "Fecal incontinence",
+        "localizedQuestion": [
+            { "question": "PERDITE DI FECI", "lng": "ita" },
+            { "question": "eng:PERDITE DI FECI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#fecal_incontinence#18.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura le PERDITE DI FECI HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura le PERDITE DI FECI HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "19",
+        "protocolQuestion": "Shortness of breath",
+        "localizedQuestion": [
+            { "question": "MANCANZA DI FIATO", "lng": "ita" },
+            { "question": "eng:MANCANZA DI FIATO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#shortness_of_breath#19.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la MANCANZA DI FIATO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la MANCANZA DI FIATO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "19",
+        "protocolQuestion": "Shortness of breath",
+        "localizedQuestion": [
+            { "question": "MANCANZA DI FIATO", "lng": "ita" },
+            { "question": "eng:MANCANZA DI FIATO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#shortness_of_breath#19.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura la MANCANZA DI FIATO ha INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura la MANCANZA DI FIATO ha INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "20",
+        "protocolQuestion": "Cough",
+        "localizedQuestion": [
+            { "question": "TOSSE", "lng": "ita" },
+            { "question": "eng:TOSSE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#cough#20.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la TOSSE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la TOSSE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "20",
+        "protocolQuestion": "Cough",
+        "localizedQuestion": [
+            { "question": "TOSSE", "lng": "ita" },
+            { "question": "eng:TOSSE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#cough#20.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura la TOSSE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura la TOSSE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "21",
+        "protocolQuestion": "Wheezing",
+        "localizedQuestion": [
+            {
+                "question": "RESPIRO SIBILANTE (EMISSIONE DI UN FISCHIO QUANDO SI RESPIRA)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:RESPIRO SIBILANTE (EMISSIONE DI UN FISCHIO QUANDO SI RESPIRA)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#wheezing#21.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il RESPIRO SIBILANTE (EMISSIONE DI UN FISCHIO QUANDO SI RESPIRA) nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il RESPIRO SIBILANTE (EMISSIONE DI UN FISCHIO QUANDO SI RESPIRA) nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "22",
+        "protocolQuestion": "Swelling",
+        "localizedQuestion": [
+            { "question": "GONFIORE ALLE BRACCIA O ALLE GAMBE", "lng": "ita" },
+            {
+                "question": "eng:GONFIORE ALLE BRACCIA O ALLE GAMBE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#swelling#22.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto GONFIORE ALLE BRACCIA O ALLE GAMBE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto GONFIORE ALLE BRACCIA O ALLE GAMBE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "22",
+        "protocolQuestion": "Swelling",
+        "localizedQuestion": [
+            { "question": "GONFIORE ALLE BRACCIA O ALLE GAMBE", "lng": "ita" },
+            {
+                "question": "eng:GONFIORE ALLE BRACCIA O ALLE GAMBE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#swelling#22.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il GONFIORE ALLE BRACCIA O ALLE GAMBE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il GONFIORE ALLE BRACCIA O ALLE GAMBE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "22",
+        "protocolQuestion": "Swelling",
+        "localizedQuestion": [
+            { "question": "GONFIORE ALLE BRACCIA O ALLE GAMBE", "lng": "ita" },
+            {
+                "question": "eng:GONFIORE ALLE BRACCIA O ALLE GAMBE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#swelling#22.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il GONFIORE ALLE BRACCIA O ALLE GAMBE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il GONFIORE ALLE BRACCIA O ALLE GAMBE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "23",
+        "protocolQuestion": "Heart palpitations",
+        "localizedQuestion": [
+            { "question": "PALPITAZIONI", "lng": "ita" },
+            { "question": "eng:PALPITAZIONI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#heart_palpitations#23.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avvertito PALPITAZIONI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avvertito PALPITAZIONI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "23",
+        "protocolQuestion": "Heart palpitations",
+        "localizedQuestion": [
+            { "question": "PALPITAZIONI", "lng": "ita" },
+            { "question": "eng:PALPITAZIONI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#heart_palpitations#23.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono state GRAVI le PALPITAZIONI nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono state GRAVI le PALPITAZIONI nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "24",
+        "protocolQuestion": "Rash",
+        "localizedQuestion": [
+            { "question": "IRRITAZIONE DELLA PELLE", "lng": "ita" },
+            { "question": "eng:IRRITAZIONE DELLA PELLE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#rash#24.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha avuto qualche IRRITAZIONE DELLA PELLE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha avuto qualche IRRITAZIONE DELLA PELLE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "25",
+        "protocolQuestion": "Skin dryness",
+        "localizedQuestion": [
+            { "question": "SECCHEZZA DELLA PELLE", "lng": "ita" },
+            { "question": "eng:SECCHEZZA DELLA PELLE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#skin_dryness#25.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la SECCHEZZA DELLA PELLE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la SECCHEZZA DELLA PELLE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "26",
+        "protocolQuestion": "Acne",
+        "localizedQuestion": [
+            {
+                "question": "BRUFOLI (ACNE) SUL VOLTO O SUL TORACE",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:BRUFOLI (ACNE) SUL VOLTO O SUL TORACE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#acne#26.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono stati GRAVI i BRUFOLI (ACNE) SUL VOLTO O SUL TORACE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono stati GRAVI i BRUFOLI (ACNE) SUL VOLTO O SUL TORACE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "27",
+        "protocolQuestion": "Hair loss",
+        "localizedQuestion": [
+            { "question": "PERDITA DEI CAPELLI", "lng": "ita" },
+            { "question": "eng:PERDITA DEI CAPELLI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#hair_loss#27.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha PERSO I CAPELLI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha PERSO I CAPELLI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "28",
+        "protocolQuestion": "Itching",
+        "localizedQuestion": [
+            { "question": "PRURITO", "lng": "ita" },
+            { "question": "eng:PRURITO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#itching#28.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il PRURITO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il PRURITO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "29",
+        "protocolQuestion": "Hives",
+        "localizedQuestion": [
+            {
+                "question": "ORTICARIA (BOLLE ROSSE CHE PROVOCANO PRURITO SULLA PELLE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:ORTICARIA (BOLLE ROSSE CHE PROVOCANO PRURITO SULLA PELLE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#hives#29.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha sviluppato ORTICARIA (BOLLE ROSSE CHE PROVOCANO PRURITO SULLA PELLE)?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha sviluppato ORTICARIA (BOLLE ROSSE CHE PROVOCANO PRURITO SULLA PELLE)?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "30",
+        "protocolQuestion": "Hand-foot syndrome",
+        "localizedQuestion": [
+            {
+                "question": "SINDROME MANO-PIEDE (IRRITAZIONE DELLE MANI O DEI PIEDI CHE PUÒ CAUSARE SCREPOLATURE, SPELLATURE, ROSSORE O DOLORE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:SINDROME MANO-PIEDE (IRRITAZIONE DELLE MANI O DEI PIEDI CHE PUÒ CAUSARE SCREPOLATURE, SPELLATURE, ROSSORE O DOLORE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#hand-foot_syndrome#30.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la SINDROME MANO-PIEDE (IRRITAZIONE DELLE MANI O DEI PIEDI CHE PUÒ CAUSARE SCREPOLATURE, SPELLATURE, ROSSORE O DOLORE) nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la SINDROME MANO-PIEDE (IRRITAZIONE DELLE MANI O DEI PIEDI CHE PUÒ CAUSARE SCREPOLATURE, SPELLATURE, ROSSORE O DOLORE) nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "31",
+        "protocolQuestion": "Nail loss",
+        "localizedQuestion": [
+            {
+                "question": "PERDITA DI UNGHIE DELLE MANI O DEI PIEDI",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:PERDITA DI UNGHIE DELLE MANI O DEI PIEDI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#nail_loss#31.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha PERSO DELLE UNGHIE DELLE MANI O DEI PIEDI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha PERSO DELLE UNGHIE DELLE MANI O DEI PIEDI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "32",
+        "protocolQuestion": "Nail ridging",
+        "localizedQuestion": [
+            {
+                "question": "ISPESSIMENTI O SOLCHI SULLE UNGHIE DELLE MANI O DEI PIEDI",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:ISPESSIMENTI O SOLCHI SULLE UNGHIE DELLE MANI O DEI PIEDI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#nail_ridging#32.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato la presenza di ISPESSIMENTI O SOLCHI SULLE UNGHIE DELLE MANI O DEI PIEDI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato la presenza di ISPESSIMENTI O SOLCHI SULLE UNGHIE DELLE MANI O DEI PIEDI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "33",
+        "protocolQuestion": "Nail discoloration",
+        "localizedQuestion": [
+            {
+                "question": "VARIAZIONE DI COLORE DELLE UNGHIE DELLE MANI O DEI PIEDI",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:VARIAZIONE DI COLORE DELLE UNGHIE DELLE MANI O DEI PIEDI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#nail_discoloration#33.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato una VARIAZIONE DI COLORE DELLE UNGHIE DELLE MANI O DEI PIEDI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato una VARIAZIONE DI COLORE DELLE UNGHIE DELLE MANI O DEI PIEDI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "34",
+        "protocolQuestion": "Sensitivity to sunlight",
+        "localizedQuestion": [
+            {
+                "question": "MAGGIOR SENSIBILITÀ DELLA PELLE AI RAGGI SOLARI",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:MAGGIOR SENSIBILITÀ DELLA PELLE AI RAGGI SOLARI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#sensitivity_to_sunlight#34.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato una MAGGIOR SENSIBILITÀ DELLA PELLE AI RAGGI SOLARI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato una MAGGIOR SENSIBILITÀ DELLA PELLE AI RAGGI SOLARI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "35",
+        "protocolQuestion": "Bed/pressure sores",
+        "localizedQuestion": [
+            { "question": "PIAGHE DA DECUBITO", "lng": "ita" },
+            { "question": "eng:PIAGHE DA DECUBITO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#bed_pressure_sores#35.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha avuto PIAGHE DA DECUBITO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha avuto PIAGHE DA DECUBITO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "36",
+        "protocolQuestion": "Radiation skin reaction",
+        "localizedQuestion": [
+            {
+                "question": "BRUCIATURE DELLA PELLE IN CONSEGUENZA DELLA RADIOTERAPIA",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:BRUCIATURE DELLA PELLE IN CONSEGUENZA DELLA RADIOTERAPIA",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#radiation_skin_reaction#36.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono state GRAVI le BRUCIATURE DELLA PELLE IN CONSEGUENZA DELLA RADIOTERAPIA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono state GRAVI le BRUCIATURE DELLA PELLE IN CONSEGUENZA DELLA RADIOTERAPIA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo",
+                    "Non perti-nente"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo",
+                    "Non perti-nente"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "37",
+        "protocolQuestion": "Skin darkening",
+        "localizedQuestion": [
+            { "question": "INSOLITO INSCURIMENTO DELLA PELLE", "lng": "ita" },
+            {
+                "question": "eng:INSOLITO INSCURIMENTO DELLA PELLE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#skin_darkening#37.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato un INSOLITO INSCURIMENTO DELLA PELLE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato un INSOLITO INSCURIMENTO DELLA PELLE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "38",
+        "protocolQuestion": "Stretch marks",
+        "localizedQuestion": [
+            { "question": "SMAGLIATURE", "lng": "ita" },
+            { "question": "eng:SMAGLIATURE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#stretch_marks#38.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato la presenza di SMAGLIATURE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato la presenza di SMAGLIATURE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "39",
+        "protocolQuestion": "Numbness & tingling",
+        "localizedQuestion": [
+            {
+                "question": "INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#numbness_&_tingling#39.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, nel momento PEGGIORE, quanto è stato GRAVE l’ INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, nel momento PEGGIORE, quanto è stato GRAVE l’ INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "39",
+        "protocolQuestion": "Numbness & tingling",
+        "localizedQuestion": [
+            {
+                "question": "INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#numbness_&_tingling#39.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura l’INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura l’INTORPIDIMENTO O FORMICOLIO ALLE MANI O AI PIEDI HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "40",
+        "protocolQuestion": "Dizziness",
+        "localizedQuestion": [
+            { "question": "GIRAMENTI DI TESTA", "lng": "ita" },
+            { "question": "eng:GIRAMENTI DI TESTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#dizziness#40.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono stati GRAVI i GIRAMENTI DI TESTA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono stati GRAVI i GIRAMENTI DI TESTA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "40",
+        "protocolQuestion": "Dizziness",
+        "localizedQuestion": [
+            { "question": "GIRAMENTI DI TESTA", "lng": "ita" },
+            { "question": "eng:GIRAMENTI DI TESTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#dizziness#40.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura i GIRAMENTI DI TESTA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura i GIRAMENTI DI TESTA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "41",
+        "protocolQuestion": "Blurred vision",
+        "localizedQuestion": [
+            { "question": "APPANNAMENTO DELLA VISTA", "lng": "ita" },
+            { "question": "eng:APPANNAMENTO DELLA VISTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#blurred_vision#41.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE l’APPANNAMENTO DELLA VISTA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE l’APPANNAMENTO DELLA VISTA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "41",
+        "protocolQuestion": "Blurred vision",
+        "localizedQuestion": [
+            { "question": "APPANNAMENTO DELLA VISTA", "lng": "ita" },
+            { "question": "eng:APPANNAMENTO DELLA VISTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#blurred_vision#41.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura l’APPANNAMENTO DELLA VISTA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura l’APPANNAMENTO DELLA VISTA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "42",
+        "protocolQuestion": "Flashing lights",
+        "localizedQuestion": [
+            { "question": "LAMPI DAVANTI AGLI OCCHI", "lng": "ita" },
+            { "question": "eng:LAMPI DAVANTI AGLI OCCHI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#flashing_lights#42.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato la comparsa di LAMPI DAVANTI AGLI OCCHI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato la comparsa di LAMPI DAVANTI AGLI OCCHI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "43",
+        "protocolQuestion": "Visual floaters",
+        "localizedQuestion": [
+            { "question": "MOSCHE VOLANTI DAVANTI AGLI OCCHI", "lng": "ita" },
+            {
+                "question": "eng:MOSCHE VOLANTI DAVANTI AGLI OCCHI",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#visual_floaters#43.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha avvertito la presenza di MOSCHE VOLANTI DAVANTI AGLI OCCHI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha avvertito la presenza di MOSCHE VOLANTI DAVANTI AGLI OCCHI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "44",
+        "protocolQuestion": "Watery eyes",
+        "localizedQuestion": [
+            { "question": "ECCESSIVA LACRIMAZIONE", "lng": "ita" },
+            { "question": "eng:ECCESSIVA LACRIMAZIONE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#watery_eyes#44.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE l'ECCESSIVA LACRIMAZIONE nel momento PEG-GIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE l'ECCESSIVA LACRIMAZIONE nel momento PEG-GIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "44",
+        "protocolQuestion": "Watery eyes",
+        "localizedQuestion": [
+            { "question": "ECCESSIVA LACRIMAZIONE", "lng": "ita" },
+            { "question": "eng:ECCESSIVA LACRIMAZIONE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#watery_eyes#44.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura l'ECCESSIVA LACRIMAZIONE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura l'ECCESSIVA LACRIMAZIONE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "45",
+        "protocolQuestion": "Ringing in ears",
+        "localizedQuestion": [
+            { "question": "RONZIO NELLE ORECCHIE", "lng": "ita" },
+            { "question": "eng:RONZIO NELLE ORECCHIE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#ringing_in_ears#45.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il RONZIO NELLE ORECCHIE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il RONZIO NELLE ORECCHIE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "46",
+        "protocolQuestion": "Concentration",
+        "localizedQuestion": [
+            { "question": "PROBLEMI DI CONCENTRAZIONE", "lng": "ita" },
+            { "question": "eng:PROBLEMI DI CONCENTRAZIONE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#concentration#46.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono stati GRAVI i PROBLEMI DI CONCENTRAZIONE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono stati GRAVI i PROBLEMI DI CONCENTRAZIONE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "46",
+        "protocolQuestion": "Concentration",
+        "localizedQuestion": [
+            { "question": "PROBLEMI DI CONCENTRAZIONE", "lng": "ita" },
+            { "question": "eng:PROBLEMI DI CONCENTRAZIONE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#concentration#46.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura i PROBLEMI DI CONCENTRAZIONE HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura i PROBLEMI DI CONCENTRAZIONE HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "47",
+        "protocolQuestion": "Memory",
+        "localizedQuestion": [
+            { "question": "PROBLEMI DI MEMORIA", "lng": "ita" },
+            { "question": "eng:PROBLEMI DI MEMORIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#memory#47.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono stati GRAVI i PROBLEMI DI MEMORIA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono stati GRAVI i PROBLEMI DI MEMORIA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "47",
+        "protocolQuestion": "Memory",
+        "localizedQuestion": [
+            { "question": "PROBLEMI DI MEMORIA", "lng": "ita" },
+            { "question": "eng:PROBLEMI DI MEMORIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#memory#47.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura i PROBLEMI DI MEMORIA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura i PROBLEMI DI MEMORIA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "48",
+        "protocolQuestion": "General pain",
+        "localizedQuestion": [
+            { "question": "DOLORE FISICO", "lng": "ita" },
+            { "question": "eng:DOLORE FISICO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#general_pain#48.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto DOLORE FISICO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto DOLORE FISICO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "48",
+        "protocolQuestion": "General pain",
+        "localizedQuestion": [
+            { "question": "DOLORE FISICO", "lng": "ita" },
+            { "question": "eng:DOLORE FISICO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#general_pain#48.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE FISICO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE FISICO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "48",
+        "protocolQuestion": "General pain",
+        "localizedQuestion": [
+            { "question": "DOLORE FISICO", "lng": "ita" },
+            { "question": "eng:DOLORE FISICO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#general_pain#48.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il DOLORE FISICO HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il DOLORE FISICO HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "49",
+        "protocolQuestion": "Headache",
+        "localizedQuestion": [
+            { "question": "MAL DI TESTA", "lng": "ita" },
+            { "question": "eng:MAL DI TESTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#headache#49.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto MAL DI TESTA?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto MAL DI TESTA?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "49",
+        "protocolQuestion": "Headache",
+        "localizedQuestion": [
+            { "question": "MAL DI TESTA", "lng": "ita" },
+            { "question": "eng:MAL DI TESTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#headache#49.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il MAL DI TESTA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il MAL DI TESTA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "49",
+        "protocolQuestion": "Headache",
+        "localizedQuestion": [
+            { "question": "MAL DI TESTA", "lng": "ita" },
+            { "question": "eng:MAL DI TESTA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#headache#49.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il MAL DI TESTA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il MAL DI TESTA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "50",
+        "protocolQuestion": "Muscle pain",
+        "localizedQuestion": [
+            { "question": "DOLORE AI MUSCOLI", "lng": "ita" },
+            { "question": "eng:DOLORE AI MUSCOLI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#muscle_pain#50.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto DOLORE AI MUSCOLI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto DOLORE AI MUSCOLI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "50",
+        "protocolQuestion": "Muscle pain",
+        "localizedQuestion": [
+            { "question": "DOLORE AI MUSCOLI", "lng": "ita" },
+            { "question": "eng:DOLORE AI MUSCOLI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#muscle_pain#50.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE AI MUSCOLI nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE AI MUSCOLI nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "50",
+        "protocolQuestion": "Muscle pain",
+        "localizedQuestion": [
+            { "question": "DOLORE AI MUSCOLI", "lng": "ita" },
+            { "question": "eng:DOLORE AI MUSCOLI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#muscle_pain#50.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il DOLORE AI MUSCOLI HA INTEREFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il DOLORE AI MUSCOLI HA INTEREFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "51",
+        "protocolQuestion": "Joint pain",
+        "localizedQuestion": [
+            {
+                "question": "DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#joint_pain#51.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "51",
+        "protocolQuestion": "Joint pain",
+        "localizedQuestion": [
+            {
+                "question": "DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#joint_pain#51.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE) nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE) nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "51",
+        "protocolQuestion": "Joint pain",
+        "localizedQuestion": [
+            {
+                "question": "DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#joint_pain#51.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE) HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il DOLORE ALLE ARTICOLAZIONI (ES. GOMITI, GINOCCHIA, SPALLE) HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "52",
+        "protocolQuestion": "Insomnia",
+        "localizedQuestion": [
+            {
+                "question": "INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#insomnia#52.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE l’INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO) nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE l’INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO) nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "52",
+        "protocolQuestion": "Insomnia",
+        "localizedQuestion": [
+            {
+                "question": "INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#insomnia#52.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, In che misura l’INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO) HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, In che misura l’INSONNIA (DIFFICOLTÀ DI ADDORMENTARSI O A MANTENERE IL SONNO, O TENDENZA A SVEGLIARSI PRESTO) HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "53",
+        "protocolQuestion": "Fatigue",
+        "localizedQuestion": [
+            {
+                "question": "SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#fatigue#53.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "53",
+        "protocolQuestion": "Fatigue",
+        "localizedQuestion": [
+            {
+                "question": "SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#fatigue#53.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il SENSO DI FATICA, STANCHEZZA O MANCANZA DI ENERGIA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "54",
+        "protocolQuestion": "Anxious",
+        "localizedQuestion": [
+            { "question": "ANSIA", "lng": "ita" },
+            { "question": "eng:ANSIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#anxious#54.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto ANSIA?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto ANSIA?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "54",
+        "protocolQuestion": "Anxious",
+        "localizedQuestion": [
+            { "question": "ANSIA", "lng": "ita" },
+            { "question": "eng:ANSIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#anxious#54.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE l'ANSIA nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE l'ANSIA nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "54",
+        "protocolQuestion": "Anxious",
+        "localizedQuestion": [
+            { "question": "ANSIA", "lng": "ita" },
+            { "question": "eng:ANSIA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#anxious#54.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura l’ANSIA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura l’ANSIA HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "55",
+        "protocolQuestion": "Discouraged",
+        "localizedQuestion": [
+            { "question": "STATO D’ANIMO", "lng": "ita" },
+            { "question": "eng:STATO D’ANIMO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#discouraged#55.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto la SENSAZIONE CHE NULLA POTESSE TI-RARLA SU DI MORALE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto la SENSAZIONE CHE NULLA POTESSE TI-RARLA SU DI MORALE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "55",
+        "protocolQuestion": "Discouraged",
+        "localizedQuestion": [
+            { "question": "STATO D’ANIMO", "lng": "ita" },
+            { "question": "eng:STATO D’ANIMO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#discouraged#55.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la SENSAZIONE CHE NULLA POTESSE TIRARLA SU DI MORALE, nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la SENSAZIONE CHE NULLA POTESSE TIRARLA SU DI MORALE, nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "55",
+        "protocolQuestion": "Discouraged",
+        "localizedQuestion": [
+            { "question": "STATO D’ANIMO", "lng": "ita" },
+            { "question": "eng:STATO D’ANIMO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#discouraged#55.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura la SENSAZIONE CHE NULLA POTESSE TIRARLA SU DI MORALE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura la SENSAZIONE CHE NULLA POTESSE TIRARLA SU DI MORALE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "56",
+        "protocolQuestion": "Sad",
+        "localizedQuestion": [
+            { "question": "TRISTEZZA", "lng": "ita" },
+            { "question": "eng:TRISTEZZA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#sad#56.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha provato TRISTEZZA o INFELICITÀ?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha provato TRISTEZZA o INFELICITÀ?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "56",
+        "protocolQuestion": "Sad",
+        "localizedQuestion": [
+            { "question": "TRISTEZZA", "lng": "ita" },
+            { "question": "eng:TRISTEZZA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#sad#56.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono state GRAVI la TRISTEZZA o l’INFELICITÀ nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono state GRAVI la TRISTEZZA o l’INFELICITÀ nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "56",
+        "protocolQuestion": "Sad",
+        "localizedQuestion": [
+            { "question": "TRISTEZZA", "lng": "ita" },
+            { "question": "eng:TRISTEZZA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#sad#56.3",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura TRISTEZZA o INFELICITÀ HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura TRISTEZZA o INFELICITÀ HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "57",
+        "protocolQuestion": "Irregular periods/vaginal bleeding",
+        "localizedQuestion": [
+            { "question": "MESTRUAZIONI IRREGOLARI", "lng": "ita" },
+            { "question": "eng:MESTRUAZIONI IRREGOLARI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#irregular_periods_vaginal_bleeding#57.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha avuto MESTRUAZIONI IRREGOLARI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha avuto MESTRUAZIONI IRREGOLARI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No", "Non pertinente"] },
+            { "lng": "eng", "answers": ["Sì", "No", "Non pertinente"] }
+        ],
+        "scores": [0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "58",
+        "protocolQuestion": "Missed expected menstrual period",
+        "localizedQuestion": [
+            { "question": "REGOLARITÀ DELLE MESTRUAZIONI", "lng": "ita" },
+            { "question": "eng:REGOLARITÀ DELLE MESTRUAZIONI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#missed_expected_menstrual_period#58.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha saltato un CICLO MESTRUALE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha saltato un CICLO MESTRUALE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No", "Non pertinente"] },
+            { "lng": "eng", "answers": ["Sì", "No", "Non pertinente"] }
+        ],
+        "scores": [0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "59",
+        "protocolQuestion": "Vaginal discharge",
+        "localizedQuestion": [
+            { "question": "INSOLITE PERDITE VAGINALI", "lng": "ita" },
+            { "question": "eng:INSOLITE PERDITE VAGINALI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#vaginal_discharge#59.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato la presenza di INSOLITE PERDITE VAGINALI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato la presenza di INSOLITE PERDITE VAGINALI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "60",
+        "protocolQuestion": "Vaginal dryness",
+        "localizedQuestion": [
+            { "question": "SECCHEZZA VAGINALE", "lng": "ita" },
+            { "question": "eng:SECCHEZZA VAGINALE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#vaginal_dryness#60.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la SECCHEZZA VAGINALE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la SECCHEZZA VAGINALE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "61",
+        "protocolQuestion": "Painful urination",
+        "localizedQuestion": [
+            { "question": "DOLORE O BRUCIORE NELL'URINARE", "lng": "ita" },
+            { "question": "eng:DOLORE O BRUCIORE NELL'URINARE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#painful_urination#61.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono stati GRAVI il DOLORE O BRUCIORE NELL'URINARE, nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono stati GRAVI il DOLORE O BRUCIORE NELL'URINARE, nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "62",
+        "protocolQuestion": "Urinary urgency",
+        "localizedQuestion": [
+            { "question": "BISOGNO URGENTE DI URINARE", "lng": "ita" },
+            { "question": "eng:BISOGNO URGENTE DI URINARE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#urinary_urgency#62.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avvertito un BISOGNO URGENTE DI URINARE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avvertito un BISOGNO URGENTE DI URINARE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "62",
+        "protocolQuestion": "Urinary urgency",
+        "localizedQuestion": [
+            { "question": "BISOGNO URGENTE DI URINARE", "lng": "ita" },
+            { "question": "eng:BISOGNO URGENTE DI URINARE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#urinary_urgency#62.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il BISOGNO URGENTE DI URINARE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il BISOGNO URGENTE DI URINARE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "63",
+        "protocolQuestion": "Urinary frequency",
+        "localizedQuestion": [
+            { "question": "BISOGNO FREQUENTE DI URINARE", "lng": "ita" },
+            { "question": "eng:BISOGNO FREQUENTE DI URINARE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#urinary_frequency#63.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ci sono state volte in cui ha avvertito un BISOGNO FREQUENTE DI URINARE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ci sono state volte in cui ha avvertito un BISOGNO FREQUENTE DI URINARE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "63",
+        "protocolQuestion": "Urinary frequency",
+        "localizedQuestion": [
+            { "question": "BISOGNO FREQUENTE DI URINARE", "lng": "ita" },
+            { "question": "eng:BISOGNO FREQUENTE DI URINARE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#urinary_frequency#63.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura il BISOGNO FREQUENTE DI URINARE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura il BISOGNO FREQUENTE DI URINARE HA INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "64",
+        "protocolQuestion": "Change in usual urine color",
+        "localizedQuestion": [
+            { "question": "VARIAZIONE DI COLORE DELLE URINE", "lng": "ita" },
+            { "question": "eng:VARIAZIONE DI COLORE DELLE URINE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#change_in_usual_urine_color#64.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato una VARIAZIONE DI COLORE DELLE URINE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato una VARIAZIONE DI COLORE DELLE URINE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "65",
+        "protocolQuestion": "Urinary incontinence",
+        "localizedQuestion": [
+            { "question": "PERDITE DI URINA", "lng": "ita" },
+            { "question": "eng:PERDITE DI URINA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#urinary_incontinence#65.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha notato PERDITE DI URINA?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha notato PERDITE DI URINA?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "65",
+        "protocolQuestion": "Urinary incontinence",
+        "localizedQuestion": [
+            { "question": "PERDITE DI URINA", "lng": "ita" },
+            { "question": "eng:PERDITE DI URINA", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#urinary_incontinence#65.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, in che misura le PERDITE DI URINA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, in che misura le PERDITE DI URINA HANNO INTERFERITO con le Sue attività abituali o quotidiane?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "66",
+        "protocolQuestion": "Achieve and maintain erection",
+        "localizedQuestion": [
+            {
+                "question": "DIFFICOLTÀ A RAGGIUNGERE O MANTENERE L'EREZIONE",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:DIFFICOLTÀ A RAGGIUNGERE O MANTENERE L'EREZIONE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#achieve_and_maintain_erection#66.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la DIFFICOLTÀ A RAGGIUNGERE O MANTENERE L'EREZIONE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la DIFFICOLTÀ A RAGGIUNGERE O MANTENERE L'EREZIONE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbas-tanza",
+                    "Molto",
+                    "Moltis-simo",
+                    "Non ses-sual-mente at-tivo",
+                    "Preferisco non ris-pondere"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbas-tanza",
+                    "Molto",
+                    "Moltis-simo",
+                    "Non ses-sual-mente at-tivo",
+                    "Preferisco non ris-pondere"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "67",
+        "protocolQuestion": "Ejaculation",
+        "localizedQuestion": [
+            { "question": "PROBLEMI DI EIACULAZIONE", "lng": "ita" },
+            { "question": "eng:PROBLEMI DI EIACULAZIONE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#ejaculation#67.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha PROBLEMI DI EIACULAZIONE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha PROBLEMI DI EIACULAZIONE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Rara-mente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre",
+                    "Non ses-sual-mente at-tivo",
+                    "Preferisco non ris-pondere"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Rara-mente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre",
+                    "Non ses-sual-mente at-tivo",
+                    "Preferisco non ris-pondere"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "68",
+        "protocolQuestion": "Decreased libido",
+        "localizedQuestion": [
+            { "question": "CALO DEL DESIDERIO SESSUALE", "lng": "ita" },
+            { "question": "eng:CALO DEL DESIDERIO SESSUALE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#decreased_libido#68.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il CALO DEL DESIDERIO SESSUALE nel momento PEG-GIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il CALO DEL DESIDERIO SESSUALE nel momento PEG-GIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbas-tanza",
+                    "Molto",
+                    "Moltis-simo",
+                    "Non ses-sual-mente at-tivo",
+                    "Preferisco non ris-pondere"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbas-tanza",
+                    "Molto",
+                    "Moltis-simo",
+                    "Non ses-sual-mente at-tivo",
+                    "Preferisco non ris-pondere"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "69",
+        "protocolQuestion": "Delayed orgasm",
+        "localizedQuestion": [
+            {
+                "question": "TROPPO TEMPO PER RAGGIUNGERE L'ORGASMO",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:TROPPO TEMPO PER RAGGIUNGERE L'ORGASMO",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#delayed_orgasm#69.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, Le è sembrato che ci volesse TROPPO TEMPO PER RAGGIUNGERE L’ORGASMO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, Le è sembrato che ci volesse TROPPO TEMPO PER RAGGIUNGERE L’ORGASMO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Sì",
+                    "No",
+                    "Non sessualmente attivo",
+                    "Preferisco non rispondere"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Sì",
+                    "No",
+                    "Non sessualmente attivo",
+                    "Preferisco non rispondere"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "70",
+        "protocolQuestion": "Unable to have orgasm",
+        "localizedQuestion": [
+            { "question": "INCAPACITÀ A RAGGIUNGERE L'ORGASMO", "lng": "ita" },
+            {
+                "question": "eng:INCAPACITÀ A RAGGIUNGERE L'ORGASMO",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#unable_to_have_orgasm#70.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha avvertito INCAPACITÀ DI RAGGIUNGERE l’ORGASMO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha avvertito INCAPACITÀ DI RAGGIUNGERE l’ORGASMO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Sì",
+                    "No",
+                    "Non sessualmente attivo",
+                    "Preferisco non ris-pondere"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Sì",
+                    "No",
+                    "Non sessualmente attivo",
+                    "Preferisco non ris-pondere"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "71",
+        "protocolQuestion": "Pain w/sexual intercourse",
+        "localizedQuestion": [
+            { "question": "DOLORE DURANTE IL RAPPORTO VAGINALE", "lng": "ita" },
+            {
+                "question": "eng:DOLORE DURANTE IL RAPPORTO VAGINALE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#pain_w_sexual_intercourse#71.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE DURANTE IL RAPPORTO VAGINALE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE il DOLORE DURANTE IL RAPPORTO VAGINALE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbas-tanza",
+                    "Molto",
+                    "Moltissimo",
+                    "Non sessualmente attivo",
+                    "Preferisco non ris-pondere"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbas-tanza",
+                    "Molto",
+                    "Moltissimo",
+                    "Non sessualmente attivo",
+                    "Preferisco non ris-pondere"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "72",
+        "protocolQuestion": "Breast swelling and tenderness",
+        "localizedQuestion": [
+            {
+                "question": "AUMENTO DI VOLUME O TENSIONE DELLE MAMMELLE",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:AUMENTO DI VOLUME O TENSIONE DELLE MAMMELLE",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#breast_swelling_and_tenderness#72.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stato GRAVE l’AUMENTO DI VOLUME O TENSIONE DELLE MAM-MELLE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stato GRAVE l’AUMENTO DI VOLUME O TENSIONE DELLE MAM-MELLE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "73",
+        "protocolQuestion": "Bruising",
+        "localizedQuestion": [
+            { "question": "LIVIDI", "lng": "ita" },
+            { "question": "eng:LIVIDI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#bruising#73.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, si è PROCURATO LIVIDI FACILMENTE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, si è PROCURATO LIVIDI FACILMENTE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "74",
+        "protocolQuestion": "Chills",
+        "localizedQuestion": [
+            { "question": "TREMORI O BRIVIDI", "lng": "ita" },
+            { "question": "eng:TREMORI O BRIVIDI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#chills#74.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avvertito TREMORI O BRIVIDI?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avvertito TREMORI O BRIVIDI?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "74",
+        "protocolQuestion": "Chills",
+        "localizedQuestion": [
+            { "question": "TREMORI O BRIVIDI", "lng": "ita" },
+            { "question": "eng:TREMORI O BRIVIDI", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#chills#74.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono stati GRAVI i TREMORI O BRIVIDI nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono stati GRAVI i TREMORI O BRIVIDI nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "75",
+        "protocolQuestion": "Increased sweating",
+        "localizedQuestion": [
+            {
+                "question": "INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#increased_sweating#75.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha sviluppato INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE)?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha sviluppato INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE)?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "75",
+        "protocolQuestion": "Increased sweating",
+        "localizedQuestion": [
+            {
+                "question": "INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE)",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE)",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#increased_sweating#75.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE l’INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE) nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE l’INSOLITA O ECCESSIVA SUDORAZIONE DURANTE IL GIORNO O LA NOTTE (NON CORRELATA ALLE VAMPATE DI CALORE) nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "76",
+        "protocolQuestion": "Decreased sweating",
+        "localizedQuestion": [
+            { "question": "CALO DELLA SUDORAZIONE", "lng": "ita" },
+            { "question": "eng:CALO DELLA SUDORAZIONE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#decreased_sweating#76.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha notato un CALO DELLA SUDORAZIONE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha notato un CALO DELLA SUDORAZIONE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No"] },
+            { "lng": "eng", "answers": ["Sì", "No"] }
+        ],
+        "scores": [0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "77",
+        "protocolQuestion": "Hot flashes",
+        "localizedQuestion": [
+            { "question": "VAMPATE DI CALORE", "lng": "ita" },
+            { "question": "eng:VAMPATE DI CALORE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#hot_flashes#77.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto VAMPATE DI CALORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto VAMPATE DI CALORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "77",
+        "protocolQuestion": "Hot flashes",
+        "localizedQuestion": [
+            { "question": "VAMPATE DI CALORE", "lng": "ita" },
+            { "question": "eng:VAMPATE DI CALORE", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#hot_flashes#77.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto sono state GRAVI le VAMPATE DI CALORE nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto sono state GRAVI le VAMPATE DI CALORE nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "78",
+        "protocolQuestion": "Nosebleed",
+        "localizedQuestion": [
+            { "question": "SANGUE DAL NASO", "lng": "ita" },
+            { "question": "eng:SANGUE DAL NASO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#nosebleed#78.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, con quale FREQUENZA ha avuto perdita di SANGUE DAL NASO?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, con quale FREQUENZA ha avuto perdita di SANGUE DAL NASO?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Mai",
+                    "Raramente",
+                    "Qualche volta",
+                    "Spesso",
+                    "Quasi sempre"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "78",
+        "protocolQuestion": "Nosebleed",
+        "localizedQuestion": [
+            { "question": "SANGUE DAL NASO", "lng": "ita" },
+            { "question": "eng:SANGUE DAL NASO", "lng": "eng" }
+        ],
+        "primaryKey": "PRO-CTCAE#nosebleed#78.2",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, quanto è stata GRAVE la perdita di SANGUE DAL NASO nel momento PEGGIORE?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, quanto è stata GRAVE la perdita di SANGUE DAL NASO nel momento PEGGIORE?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            {
+                "lng": "ita",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            },
+            {
+                "lng": "eng",
+                "answers": [
+                    "Per nulla",
+                    "Un po’",
+                    "Abbastanza",
+                    "Molto",
+                    "Moltissimo"
+                ]
+            }
+        ],
+        "scores": [0, 0, 0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    },
+    {
+        "order": "79",
+        "protocolQuestion": "Pain and swelling at injection site",
+        "localizedQuestion": [
+            {
+                "question": "DOLORE, GONFIORE, ROSSORE NEL PUNTO IN CUI È STATA SOMMINISTRATA LA TERAPIA",
+                "lng": "ita"
+            },
+            {
+                "question": "eng:DOLORE, GONFIORE, ROSSORE NEL PUNTO IN CUI È STATA SOMMINISTRATA LA TERAPIA",
+                "lng": "eng"
+            }
+        ],
+        "primaryKey": "PRO-CTCAE#pain_and_swelling_at_injection_site#79.1",
+        "localizedQuestionDescription": [
+            {
+                "description": "Negli ultimi 7 giorni, ha sviluppato DOLORE, GONFIORE, ROSSORE NEL PUNTO IN CUI È STATA SOMMINISTRATA LA TERAPIA?",
+                "lng": "ita"
+            },
+            {
+                "description": "eng:Negli ultimi 7 giorni, ha sviluppato DOLORE, GONFIORE, ROSSORE NEL PUNTO IN CUI È STATA SOMMINISTRATA LA TERAPIA?",
+                "lng": "eng"
+            }
+        ],
+        "localizedAnswers": [
+            { "lng": "ita", "answers": ["Sì", "No", "Non pertinente"] },
+            { "lng": "eng", "answers": ["Sì", "No", "Non pertinente"] }
+        ],
+        "scores": [0, 0, 0],
+        "protocol": "PRO-CTCAE"
+    }
+]
