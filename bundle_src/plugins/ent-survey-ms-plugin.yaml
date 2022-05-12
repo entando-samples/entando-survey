@@ -1,0 +1,7 @@
+image: CHANGE-IT/ent-vue-project-template:0.0.1-SNAPSHOT
+dbms: none
+ingressPath: "/ent-survey-api"
+healthCheckPath: "/actuator/health"
+roles:
+  - "et-first-role"
+  - "et-second-role"
