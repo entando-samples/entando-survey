@@ -10,8 +10,6 @@ import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
 import AuthLayout from "@/views/layouts/AuthLayout.vue";
 import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
-import FaqIndexPage from "@/views/faq/Index.vue";
-import FaqFormPage from "@/views/faq/Form.vue";
 import CreditFormPage from "@/views/credit/Form.vue";
 import ForgetPassword from "@/views/auth/ForgetPassword.vue";
 import VueRouter from "vue-router";
@@ -32,11 +30,6 @@ const surveys = {
     index: SurveyIndexPage,
     form: SurveyFormPage,
 };
-
-const faq = {
-    index: FaqIndexPage,
-    form: FaqFormPage,
-}
 
 const errors = {
     notFound: NotFoundPage,
@@ -102,21 +95,6 @@ const router = new VueRouter({
                     path: "surveys/:id",
                     name: "surveys.edit",
                     component: surveys.form,
-                },
-                {
-                    path: "faq",
-                    name: "faq.index",
-                    component: faq.index,
-                },
-                {
-                    path: "faq/create",
-                    name: "faq.create",
-                    component: faq.form,
-                },
-                {
-                    path: "faq/:id/edit",
-                    name: "faq.edit",
-                    component: faq.form,
                 },
                 {
                     path: "credit",
