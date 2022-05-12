@@ -138,7 +138,7 @@
                             :key="question.id"
                         >
                             <p class="text-primary">{{ index + 1 }}</p>
-                            <!-- <div>
+                            <div>
                                 <p class="text-primary">{{ question.title }}</p>
                                 <p class="mt-1 text-sm">{{ question.description }}</p>
                                 <ul class="mt-2 text-sm space-y-3">
@@ -162,7 +162,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </li>
                     </ul>
                 </b-block>
@@ -245,6 +245,7 @@ import 'quill/dist/quill.bubble.css';
 import 'quill/dist/quill.core.css';
 import 'quill/dist/quill.snow.css';
 import { quillEditor } from 'vue-quill-editor';
+import useDocumentsFilter from "@/compositions/documentFilters";
 import router from "../../router";
 import Vue from "vue";
 
@@ -269,7 +270,8 @@ export default defineComponent({
         const { survey: form, saveSurvey, errors, getSurvey, updateSurvey, loading } = useSurveys();
         const activeStep = ref(1);
         const { loading: loadingQuestions, getQuestions, questions, filters: questionsFilter, getFilters: getQuestionsFilter } = useQuestions();
-        
+        const { filters, getFilters } = useDocumentsFilter();
+
         const formQuestionFilters = reactive({
             search: '',
             questions: null,
