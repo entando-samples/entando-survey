@@ -6,14 +6,6 @@ import QuestionFormPage from "@/views/questions/Form.vue";
 import QuestionIndexPage from "@/views/questions/Index.vue";
 import SurveyIndexPage from "@/views/surveys/Index.vue";
 import SurveyFormPage from "@/views/surveys/Form.vue";
-import MessageIndexPage from "@/views/messages/Index.vue";
-import MessageShowPage from "@/views/messages/Show.vue";
-import MessageFormPage from "@/views/messages/Form.vue";
-import InboundList from "@/views/messages/index/InboundList.vue";
-import OutboundList from "@/views/messages/index/OutboundList.vue";
-import ReadList from "@/views/messages/index/ReadList.vue";
-import RequireCallList from "@/views/messages/index/RequireCallList.vue";
-import ArchivedList from "@/views/messages/index/ArchivedList.vue";
 import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
 import AuthLayout from "@/views/layouts/AuthLayout.vue";
@@ -39,19 +31,6 @@ const questions = {
 const surveys = {
     index: SurveyIndexPage,
     form: SurveyFormPage,
-};
-
-const messages = {
-    index: {
-        main: MessageIndexPage,
-        inboundList: InboundList,
-        readList: ReadList,
-        requireCallList: RequireCallList,
-        archivedList: ArchivedList,
-        outboundList: OutboundList,
-    },
-    show: MessageShowPage,
-    form: MessageFormPage
 };
 
 const faq = {
@@ -123,50 +102,6 @@ const router = new VueRouter({
                     path: "surveys/:id",
                     name: "surveys.edit",
                     component: surveys.form,
-                },
-                {
-                    path: "messages",
-                    name: "messages.index",
-                    component: messages.index.main,
-                    redirect: {
-                        name: "messages.index.inbound",
-                    },
-                    children: [
-                        {
-                            path: "inbound",
-                            name: "messages.index.inbound",
-                            component: messages.index.inboundList,
-                        },
-                        {
-                            path: "read",
-                            name: "messages.index.read",
-                            component: messages.index.readList,
-                        },
-                        {
-                            path: "require-call",
-                            name: "messages.index.requireCall",
-                            component: messages.index.requireCallList,
-                        },
-                        {
-                            path: "archived",
-                            name: "messages.index.archived",
-                            component: messages.index.archivedList,
-                        }, {
-                            path: "outbound",
-                            name: "messages.index.outbound",
-                            component: messages.index.outboundList,
-                        },
-                    ],
-                },
-                {
-                    path: "messages/create",
-                    name: "messages.create",
-                    component: messages.form,
-                },
-                {
-                    path: "messages/:id",
-                    name: "messages.show",
-                    component: messages.show,
                 },
                 {
                     path: "faq",

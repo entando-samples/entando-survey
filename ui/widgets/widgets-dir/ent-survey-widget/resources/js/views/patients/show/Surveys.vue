@@ -150,7 +150,6 @@
         questionario
         <span class="font-bold">{{ modals.remind.survey.title }}</span> .
         <p>Conferma di voler procedere.</p>
-        <!-- {{ messagesCount.loading ? "(loading...)" : messagesCount.value }} -->
       </h3>
 
       <template #footer>
