@@ -148,6 +148,20 @@
                       />
                     </svg>
                   </button>
+                  <router-link
+                    :is="survey.patients_count > 0 ? 'router-link' : 'span'"
+                    :to="{ path: '/patients', query: { survey: survey.id } }"
+                  >
+                    <span
+                      class="cursor-pointer underline text-green-700"
+                      :class="
+                        survey.patients_count > 0 ?
+                        'hover:text-green-900 hover:font-extrabold'
+                        :'cursor-not-allowed'
+                      "
+                      >({{ survey.patients_count }})</span
+                    >
+                  </router-link>
                 </div>
               </td>
             </tr>
@@ -299,6 +313,7 @@ import {
   watch,
 } from "@vue/composition-api";
 import useSurveys from "@/compositions/surveys";
+import useDocumentsFilter from "@/compositions/documentFilters";
 import debounce from "lodash/debounce";
 import Vue from "vue";
 
@@ -320,7 +335,8 @@ export default defineComponent({
     });
 
     const { getSurveys, surveys, loading, deleteSurvey } = useSurveys();
-    
+    const { getFilters, filters: filterData } = useDocumentsFilter();
+
     console.log("surveys ", surveys);
     async function confirmDeleteModal(e, survey) {
       deleteSurveyModal.remind.survey = survey;
