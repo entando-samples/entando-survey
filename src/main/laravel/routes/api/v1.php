@@ -95,4 +95,4 @@ Route::get('stream', [UploadController::class, 'stream']);
 Route::post('uploads', [UploadController::class, 'store']);
 Route::delete('uploads', [UploadController::class, 'destroy']);
 Route::get('faqs', [Client\FaqController::class, 'index']);
-Route::get("credit", [Backend\CreditController::class, 'show']);
+Route::get('credit', [Backend\CreditController::class, 'show']);
