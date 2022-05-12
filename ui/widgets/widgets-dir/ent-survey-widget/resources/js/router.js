@@ -10,7 +10,6 @@ import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
 import AuthLayout from "@/views/layouts/AuthLayout.vue";
 import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
-import CreditFormPage from "@/views/credit/Form.vue";
 import ForgetPassword from "@/views/auth/ForgetPassword.vue";
 import VueRouter from "vue-router";
 
@@ -95,11 +94,6 @@ const router = new VueRouter({
                     path: "surveys/:id",
                     name: "surveys.edit",
                     component: surveys.form,
-                },
-                {
-                    path: "credit",
-                    name: "credit",
-                    component: CreditFormPage,
                 },
                 {
                     path: "logout",
