@@ -1,7 +1,7 @@
-import Vue from './config'
-import { createPinia} from 'pinia';
-import App from './App';
-import router from './router';
+import Vue from './config.js'
+import { createPinia } from 'pinia';
+import App from './App.vue';
+import router from './router.js';
 
 
 
