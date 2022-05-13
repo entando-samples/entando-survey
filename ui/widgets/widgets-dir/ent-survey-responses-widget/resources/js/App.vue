@@ -19,7 +19,7 @@ export default defineComponent({
 
     authStore.$subscribe((_, state) => {
       if (state.user) {
-        router.push(root.$route.query.redirect || "questions");
+        router.push(root.$route.query.redirect || "responses");
       }
     });
 
