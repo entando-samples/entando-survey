@@ -1,0 +1,6 @@
+code: ent-survey-responses-widget
+titles:
+  en: Survey Responses Widget
+  it: Survey Responses Widget
+group: free
+customUiPath: ent-survey-responses-widget.ftl

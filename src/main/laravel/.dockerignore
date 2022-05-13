@@ -21,6 +21,7 @@ phpspec.yml
 
 
 docker
+!docker/apache/000-default.conf
 Dockerfile
 docker-compose.yml
 
