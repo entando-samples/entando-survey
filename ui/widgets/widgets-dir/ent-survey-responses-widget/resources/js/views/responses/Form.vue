@@ -262,7 +262,7 @@ const editorOptions = {
 };
 
 export default defineComponent({
-    name: "SurveyFormPage",
+    name: "ResponsesFormPage",
     components: { quillEditor },
     setup(props, { root }) {
         const editTitle = ref(false);
