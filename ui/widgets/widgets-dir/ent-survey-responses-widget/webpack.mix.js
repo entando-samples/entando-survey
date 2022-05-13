@@ -8,8 +8,8 @@ mix.alias({
 });
 
 mix.setPublicPath('build')
-    .js("resources/js/ent-survey.js", "static/js")
-    .sass("resources/css/app.scss", "static/css")
+    .js("resources/js/ent-survey-responses.js", "static/js")
+    .sass("resources/css/app-responses.scss", "static/css")
     .html({
         output: '.',
         htmlRoot: 'resources/views/index.html',
