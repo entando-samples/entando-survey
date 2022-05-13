@@ -112,7 +112,7 @@ function updateFTLTemplate() {
             jsfile=$(basename "$jspath")
 
             cp "$dir/resources/static/js/$jsfile" bundle/resources/static/js/
-            resource="<script type=\"module\" src=\"<@wp.resourceURL />${bundleCode}/static/js/${jsfile}\"></script>"
+            resource="<script src=\"<@wp.resourceURL />${bundleCode}/static/js/${jsfile}\"></script>"
             injectResource "$resource" "$ftlName"
         done
 

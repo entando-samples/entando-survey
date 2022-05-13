@@ -5,7 +5,7 @@
                 <div class="h-header px-4 flex items-center bg-secondary text-white">
                     <span class="font-bold text-4xl">R-kare</span>
                 </div>
-                <Navigation :message-count="settingsStore.message_count" />
+                <Navigation />
             </aside>
             <Header></Header>
             <div class="md:pl-sidebar" style="background: rgb(249 248 248);">
@@ -29,15 +29,6 @@ import { useSettingsStore } from "@/stores/settings";
 import { defineComponent, onMounted, onUnmounted } from "@vue/composition-api";
 import Navigation from "./App/Navigation.vue";
 import Header from "./App/Header.vue";
-import client from '@/http';
-
-function fetchMessageCount() {
-    return client.get(
-        '/backend/messages/inbound-count'
-    ).then(res => {
-        return res.data.data || 0;
-    })
-}
 
 export default defineComponent({
     name: "AppLayout",
@@ -48,26 +39,9 @@ export default defineComponent({
     setup() {
         const settingsStore = useSettingsStore();
 
-        onMounted(() => {
-            getMessageCount();
+        onMounted(() => {})
 
-            // long polling message count (every 10s)
-            setInterval(getMessageCount, 10 * 1000);
-
-            // incase we have to update message count for ux purpose from any part of application
-            window.addEventListener('update:message-count', getMessageCount)
-        })
-
-        onUnmounted(() => {
-            // removing event if the app is unmounted (no calls from login page / unauthenticated layouts)
-            window.removeEventListener('update:message-count', getMessageCount)
-        })
-
-        function getMessageCount() {
-            fetchMessageCount().then(count => {
-                settingsStore.message_count = count;
-            })
-        }
+        onUnmounted(() => {})
 
         return {
             settingsStore
