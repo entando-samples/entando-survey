@@ -1,7 +1,7 @@
-import Vue from './config'
+import Vue from './js/config'
 import { createPinia} from 'pinia';
-import App from './App';
-import router from './router';
+import App from './js/App';
+import router from './js/router';
 // import Keycloak from 'keycloak-js';
 
 let initOptions = {

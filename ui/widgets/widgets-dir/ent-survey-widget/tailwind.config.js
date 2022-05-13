@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     purge: {
-        content: ["./resources/js/**/*.vue", "./resources/views/**/*.blade.php"],
+        content: ["./src/js/**/*.vue", "./src/views/**/*.blade.php"],
         safelist: [
             'bg-ternary-dark'
         ]
