@@ -150,6 +150,7 @@ Desktop.ini
 /src/main/docker/keycloak-db/
 /src/main/docker/postgresql-db/
 /src/main/docker/postgres-db/
+/src/main/laravel/docker/mysql/mysqldata/
 
 ######################
 # Entando bundles
@@ -177,3 +178,5 @@ Desktop.ini
 /bundle/resources/
 
 vendor/
+
+
