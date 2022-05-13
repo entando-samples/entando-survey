@@ -1,26 +1,19 @@
 import { useAuthStore } from "@/stores/auth";
 import LogoutPage from "@/views/auth/Logout.vue";
-import QuestionFormPage from "@/views/questions/Form.vue";
-import QuestionIndexPage from "@/views/questions/Index.vue";
-import SurveyIndexPage from "@/views/surveys/Index.vue";
-import SurveyFormPage from "@/views/surveys/Form.vue";
 import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
 import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
+import ResponsesIndexPage from '@/views/responses/Index.vue';
+import ResponsesFormPage from '@/views/responses/Form.vue';
 import VueRouter from "vue-router";
 
 const auth = {
     logout: LogoutPage
 };
 
-const questions = {
-    index: QuestionIndexPage,
-    form: QuestionFormPage,
-};
-
-const surveys = {
-    index: SurveyIndexPage,
-    form: SurveyFormPage,
+const responses = {
+    index: ResponsesIndexPage,
+    form: ResponsesFormPage,
 };
 
 const errors = {
@@ -40,29 +33,14 @@ const router = new VueRouter({
             },
             children: [
                 {
-                    path: "questions",
-                    name: "questions.index",
-                    component: questions.index,
+                    path: "responses",
+                    name: "reponses.index",
+                    component: responses.index,
                 },
                 {
-                    path: "questions/create",
-                    name: "questions.create",
-                    component: questions.form,
-                },
-                {
-                    path: "surveys",
-                    name: "surveys.index",
-                    component: surveys.index,
-                },
-                {
-                    path: "surveys/create",
-                    name: "surveys.create",
-                    component: surveys.form,
-                },
-                {
-                    path: "surveys/:id",
-                    name: "surveys.edit",
-                    component: surveys.form,
+                    path: "responses/:id",
+                    name: "responses.answer",
+                    component: responses.form,
                 },
                 {
                     path: "logout",
@@ -105,7 +83,7 @@ const router = new VueRouter({
 //     } else if (to.matched.some((record) => record.meta.guest)) {
 //         if (authStore.isAuthenticated) {
 //             next({
-//                 name: "questions",
+//                 name: "responses",
 //             });
 //         } else {
 //             next();
