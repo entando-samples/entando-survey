@@ -33,7 +33,7 @@ export default defineComponent({
     setup() {
         return {
             goBack() {
-                window.history.length > 2 ? router.go(-1) : router.push({ name: "dashboard" });
+                window.history.length > 2 ? router.go(-1) : router.push({ name: "questions" });
             }
         }
     }

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const client = axios.create({
-    baseURL: "/api/v1/",
+    baseURL: window.laravel.appUrl + "/api/v1/",
     withCredentials: true,
 });
 
