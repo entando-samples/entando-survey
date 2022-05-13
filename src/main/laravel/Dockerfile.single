@@ -32,6 +32,7 @@ COPY --from=build /app /var/www
 # # Copy existing application directory permissions
 COPY --from=build --chown=www-data:www-data /app /var/www
 
+RUN sed -i "s/Listen 80/Listen 8081/" /etc/apache2/ports.conf
 # # Change current user to www
 USER www-data
 
@@ -46,6 +47,7 @@ RUN php artisan config:cache && \
     php artisan storage:link
 
 USER root
+EXPOSE 8081
 
 RUN a2enmod rewrite
 
