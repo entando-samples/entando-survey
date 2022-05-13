@@ -9,7 +9,7 @@
         "prod": "npm run production",
         "production": "mix --production",
         "start": "mix watch",
-        "build": "npm run production"
+        "build": "mix --production"
     },
     "devDependencies": {
         "browser-sync-webpack-plugin": "^2.3.0",
