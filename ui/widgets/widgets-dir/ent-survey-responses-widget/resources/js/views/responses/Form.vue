@@ -5,31 +5,12 @@
             class="grid grid-flow-col bg-gray-200 uppercase text-gray-500 text-sm rounded-md multistep"
         >
             <div
-                class="flex items-center space-x-3 px-4 border-r border-gray-300 py-5"
-                :class="{ active: (activeStep == 1) }"
+                class="flex items-center space-x-3 px-4 border-r border-gray-300 py-5 active"
             >
                 <span
                     class="border border-gray-500 rounded-full w-8 h-8 flex justify-center items-center"
                 >1</span>
                 <p>scegli le domande</p>
-            </div>
-            <div
-                class="flex items-center space-x-3 px-4 border-r border-gray-300 py-5"
-                :class="{ active: (activeStep == 2) }"
-            >
-                <span
-                    class="border border-gray-500 rounded-full w-8 h-8 flex justify-center items-center"
-                >2</span>
-                <p>imposta gli alert</p>
-            </div>
-            <div
-                class="flex items-center space-x-3 px-4 py-5"
-                :class="{ active: (activeStep == 3) }"
-            >
-                <span
-                    class="border border-gray-500 rounded-full w-8 h-8 flex justify-center items-center"
-                >3</span>
-                <p>salva il questionario</p>
             </div>
         </div>
 
@@ -40,7 +21,7 @@
         </b-block>
 
         <div class="mt-5">
-            <div v-if="activeStep == 1">
+            <div>
                 <div class="mt-5 flex items-center space-x-4">
                     <label for="search">Cerca tra le domande:</label>
                     <input
@@ -126,109 +107,6 @@
                     </p>
                 </b-block>
                 <div class="mt-4 text-right">
-                    <b-button :disabled="form.questions.length < 1" @click="activeStep++">Conferma</b-button>
-                </div>
-            </div>
-            <div v-if="activeStep == 2">
-                <b-block>
-                    <ul class="space-y-3" style="max-height: 600px;">
-                        <li
-                            class="border-t py-5 flex space-x-5 items-start"
-                            v-for="(question, index) in fullSelectedQuestions"
-                            :key="question.id"
-                        >
-                            <p class="text-primary">{{ index + 1 }}</p>
-                            <div>
-                                <p class="text-primary">{{ question.title }}</p>
-                                <p class="mt-1 text-sm">{{ question.description }}</p>
-                                <ul class="mt-2 text-sm space-y-3">
-                                    <li
-                                        v-for="answer in question.answers"
-                                        class="flex items-center space-x-6"
-                                    >
-                                        <div
-                                            class="border border-primary rounded-sm p-2 w-80"
-                                        >{{ answer.body }}</div>
-                                        <div class="flex items-center">
-                                            <input
-                                                class="h-4 w-4"
-                                                type="checkbox"
-                                                :value="answer.id"
-                                                v-model="form.warning_answers"
-                                            />
-                                            <p
-                                                class="ml-2 text-xs"
-                                            >Imposta un`alert per questa risposta</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </b-block>
-                <div class="mt-4 text-right">
-                    <b-button variant="primary-alt" @click="activeStep--">Indietro</b-button>
-                    <b-button @click="activeStep++">Conferma</b-button>
-                </div>
-            </div>
-            <div v-if="activeStep == 3">
-                <b-block>
-                    <h2 class="text-primary font-bold flex items-center text-xl">
-                        <input
-                            v-model="form.title"
-                            @blur="onTitleInputBlur"
-                            class="bg-transparent border-primary font-bold"
-                            :class="{ 'px-2 py-1 border w-full': editTitle }"
-                            v-if="editTitle"
-                        />
-                        <template v-if="!editTitle">
-                            <span>{{ form.title }}</span>
-
-                            <button class="ml-3" @click="editTitle = true">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-4 w-4"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                                    />
-                                </svg>
-                            </button>
-                        </template>
-                    </h2>
-                    <div class="mt-8">
-                        <p class="text-sm font-semibold">Associa le patologie al questionario</p>
-                        <div class="mt-4 space-x-5">
-                            <label>Cerca tra le patalogie:</label>
-                            <b-select
-                                v-model="form.pathologies"
-                                class="inline-block w-80"
-                                placeholder="Patologia"
-                                label="title"
-                                :options="filters.pathologies"
-                                :reduce="item => item.id"
-                                :multiple="true"
-                            ></b-select>
-                            <b-button @click="selectAllPathologies">select all</b-button>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <p class="text-sm font-semibold">Description</p>
-                        <quill-editor
-                            class="mt-2"
-                            v-model="form.description"
-                            :options="editorOptions"
-                        ></quill-editor>
-                    </div>
-                </b-block>
-                <div class="mt-4 text-right">
-                    <b-button variant="primary-alt" @click="activeStep--">Indietro</b-button>
                     <b-button @click="save" :disabled="loading">Salva questionario</b-button>
                 </div>
             </div>
@@ -262,13 +140,12 @@ const editorOptions = {
 };
 
 export default defineComponent({
-    name: "SurveyFormPage",
+    name: "ResponsesFormPage",
     components: { quillEditor },
     setup(props, { root }) {
         const editTitle = ref(false);
         const questionListType = ref("all");
         const { survey: form, saveSurvey, errors, getSurvey, updateSurvey, loading } = useSurveys();
-        const activeStep = ref(1);
         const { loading: loadingQuestions, getQuestions, questions, filters: questionsFilter, getFilters: getQuestionsFilter } = useQuestions();
         const { filters, getFilters } = useDocumentsFilter();
 
@@ -367,7 +244,6 @@ export default defineComponent({
             loadingQuestions,
             questions,
             fullSelectedQuestions,
-            activeStep,
             editorOptions,
             form,
             editTitle,
