@@ -26,6 +26,8 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-configure opcache --enable-opcache && \
     docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd
 
+COPY docker/apache/000-default.conf /etc/apache2/sites-available/000-default.conf
+
 # Copy existing application directory contents
 COPY --from=build /app /var/www
 
