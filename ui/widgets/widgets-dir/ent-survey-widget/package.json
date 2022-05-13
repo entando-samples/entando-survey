@@ -1,41 +1,44 @@
 {
-    "private": true,
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
-    },
-    "dependencies": {
-        "@vue/composition-api": "^1.4.5",
-        "axios": "^0.21.4",
-        "browser-sync": "^2.27.9",
-        "chart.js": "^2.9.4",
-        "filepond": "^4.30.3",
-        "filepond-plugin-file-validate-type": "^1.2.6",
-        "filepond-plugin-image-preview": "^4.6.10",
-        "keycloak-js": "^7.0.1",
-        "lodash": "^4.17.19",
-        "moment": "^2.29.1",
-        "pinia": "^2.0.3",
-        "portal-vue": "^2.1.7",
-        "tailwindcss": "^2.2.19",
-        "vue": "^2.6.14",
-        "vue-chartjs": "^3.5.1",
-        "vue-filepond": "^6.0.3",
-        "vue-quill-editor": "^3.0.6",
-        "vue-router": "^3.5.3",
-        "vue-select": "^3.16.0",
-        "vue-tabs-component": "^1.5.0",
-        "vue-toasted": "^1.1.28",
-        "vuedraggable": "^2.24.3"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.12.16",
-        "@babel/eslint-parser": "^7.12.16",
-        "@vue/cli-plugin-babel": "~5.0.0",
-        "@vue/cli-service": "~5.0.0",
-        "sass": "^1.51.0",
-        "sass-loader": "^12.6.0",
-        "vue-template-compiler": "^2.6.14"
-    }
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.4.5",
+    "autoprefixer": "^10",
+    "axios": "^0.21.4",
+    "browser-sync": "^2.27.9",
+    "chart.js": "^2.9.4",
+    "filepond": "^4.30.3",
+    "filepond-plugin-file-validate-type": "^1.2.6",
+    "filepond-plugin-image-preview": "^4.6.10",
+    "keycloak-js": "^7.0.1",
+    "lodash": "^4.17.19",
+    "moment": "^2.29.1",
+    "pinia": "^2.0.3",
+    "portal-vue": "^2.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^2.2.19",
+    "vue": "^2.6.14",
+    "vue-chartjs": "^3.5.1",
+    "vue-filepond": "^6.0.3",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.5.3",
+    "vue-select": "^3.16.0",
+    "vue-tabs-component": "^1.5.0",
+    "vue-toasted": "^1.1.28",
+    "vuedraggable": "^2.24.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "vue-cli-plugin-tailwind": "~3.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
 }

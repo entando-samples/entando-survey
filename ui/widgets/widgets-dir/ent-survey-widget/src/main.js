@@ -2,6 +2,7 @@ import Vue from './js/config'
 import { createPinia} from 'pinia';
 import App from './js/App';
 import router from './js/router';
+import './assets/tailwind.css'
 // import Keycloak from 'keycloak-js';
 
 let initOptions = {
