@@ -14,6 +14,9 @@ let initOptions = {
 
 // let keycloak = Keycloak(initOptions);
 
+window.laravel = {
+    "appUrl": process.env.VUE_APP_SERVER_SERVLET_CONTEXT_PATH
+};
 
 
 
