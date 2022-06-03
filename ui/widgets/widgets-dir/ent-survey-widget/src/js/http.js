@@ -8,6 +8,7 @@ const client = axios.create({
 client.interceptors.request.use(request => {
     request.headers.common['Accept'] = 'application/json';
     request.headers.common['Content-Type'] = 'application/json';
+    request.headers.common['Authorization'] = `Bearer ${entando.keycloak.token}`;
     return request;
 });
 
