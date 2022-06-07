@@ -71,17 +71,17 @@ const router = new VueRouter({
                 },
             ],
         },
-        {
-            path: "/",
-            component: ErrorLayout,
-            children: [
-                {
-                    path: "*",
-                    name: "404",
-                    component: errors.notFound,
-                },
-            ],
-        },
+        // {
+        //     path: "/",
+        //     component: ErrorLayout,
+        //     children: [
+        //         {
+        //             path: "*",
+        //             name: "404",
+        //             component: errors.notFound,
+        //         },
+        //     ],
+        // },
     ],
 });
 

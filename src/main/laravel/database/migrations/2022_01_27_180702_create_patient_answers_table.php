@@ -25,8 +25,8 @@ class CreatePatientAnswersTable extends Migration
             $table->foreignId("answer_id")
                 ->constrained("answers");
 
-            $table->foreignId("patient_id")
-                ->constrained("users");
+            $table->string("patient_id");
+
 
             $table->unique(['survey_id', 'question_id', 'patient_id']);
             $table->timestamps();

@@ -15,9 +15,8 @@ class CreatePatientSurveyTable extends Migration
     {
         Schema::create('patient_survey', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('patient_id')
-                ->constrained('users')
-                ->onDelete('cascade');
+            $table->string('patient_id');
+
             $table->foreignId('survey_id')
                 ->constrained('surveys')
                 ->onDelete('cascade');

@@ -9,7 +9,6 @@ use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements \App\Firebase\Notifiable
@@ -77,9 +76,6 @@ class User extends Authenticatable implements \App\Firebase\Notifiable
         return $q->where('id', $userId);
     }
 
-    public function messages():HasMany
-    {
-        return $this->hasMany(Message::class,'sender_id','id');
-    }
+
     
 }

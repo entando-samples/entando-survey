@@ -4,8 +4,8 @@ RUN composer install --prefer-dist --optimize-autoloader --no-interaction
 
 FROM php:7.4-apache-buster as production
 
-# ENV APP_ENV=production
-# ENV APP_DEBUG=false
+# # ENV APP_ENV=production
+# # ENV APP_DEBUG=false
 # # Set working directory
 WORKDIR /var/www
 
