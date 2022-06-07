@@ -5,11 +5,15 @@ const client = axios.create({
     withCredentials: true,
 });
 
-client.interceptors.request.use(request => {
-    request.headers.common['Accept'] = 'application/json';
-    request.headers.common['Content-Type'] = 'application/json';
-    request.headers.common['Authorization'] = `Bearer ${entando.keycloak.token}`;
-    return request;
+window.addEventListener('keycloak', function (e) {
+    console.log(e);
+    console.log(entando.keycloak.token);
+    client.interceptors.request.use(request => {
+        request.headers.common['Accept'] = 'application/json';
+        request.headers.common['Content-Type'] = 'application/json';
+        request.headers.common['Authorization'] = `Bearer ${entando.keycloak.token}`;
+        return request;
+    });
 });
 
 client.interceptors.response.use(
