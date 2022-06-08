@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V1\Backend;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Requests\UserRequest;
@@ -67,6 +68,8 @@ class UserController extends Controller
 
     public function me()
     {
-        return success(['user' => auth()->user()]);
+
+        return Auth::user();
+//        return success(['user' => auth()->user()]);
     }
 }

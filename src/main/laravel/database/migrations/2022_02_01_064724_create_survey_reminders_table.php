@@ -18,10 +18,8 @@ class CreateSurveyRemindersTable extends Migration
             $table->foreignId('pivot_id')
                 ->constrained('patient_survey')
                 ->onDelete('cascade');
-            $table->foreignId('reminded_by')
-                ->nullable()
-                ->constrained('users')
-                ->onDelete('set null');
+            $table->string('reminded_by');
+
             $table->timestamps();
         });
     }

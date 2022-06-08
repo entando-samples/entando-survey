@@ -10,7 +10,6 @@ services:
   #     - ./:/var/www
   #     - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
   #   depends_on:
-  #     - mysql
   #     - app
 
   # app:

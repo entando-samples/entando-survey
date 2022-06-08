@@ -21,12 +21,13 @@ class SurveyController extends Controller
             ->whereInPathologies(request('pathologies'))
             ->select(['id', 'title'])
             ->with(['pathologies:id,title'])
-            ->withCount(['patients'])
+//            ->withCount(['patients'])
             ->paginate()
             ->through(function ($item) {
                 $item->can_be_edited =  $item->canBeEdited();
                 return $item;
-            });
+            })
+        ;
         // dd($surveys);
 
         return success($surveys);
