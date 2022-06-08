@@ -16,10 +16,7 @@ class Pathology extends Model
         'slug',
     ];
 
-    public function documents(): BelongsToMany
-    {
-        return $this->belongsToMany(Document::class);
-    }
+
 
     public function surveys(): BelongsToMany
     {

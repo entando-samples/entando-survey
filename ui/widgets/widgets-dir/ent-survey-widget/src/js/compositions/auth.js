@@ -43,7 +43,7 @@ export default function useAuth() {
     }
 
     async function getUser() {
-        await client.get("/sanctum/csrf-cookie", {
+        await client.get("csrf-cookie", {
             baseURL: window.laravel.appUrl,
         });
 
