@@ -32,10 +32,9 @@ client.interceptors.response.use(
         return response;
     },
     error => {
-        // if (error.response.status === 401) {
-            // this.$router.push({path:'/login'});
-            // }
-        console.log(error);
+        if (error.response.status === 401) {
+            entando.keycloak.updateToken(300);
+        }
         return Promise.reject(error);
     }
 );
