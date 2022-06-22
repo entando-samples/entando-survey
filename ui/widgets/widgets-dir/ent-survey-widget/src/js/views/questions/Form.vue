@@ -38,9 +38,10 @@
                     </div>
                     <div v-if="form.localizedAnswers[0].answers.length" class="mt-1 flex flex-col">
                         <span>Possibili risposte:</span>
-                        <span v-for="(answer, index) in form.localizedAnswers[0].answers" :key="index">
-                            {{ `${index + 1} - ${answer}` }}
-                        </span>
+                        <div v-for="(answer, index) in form.localizedAnswers[0].answers" :key="index" class="flex">
+                            <span>{{ `${index + 1} - ${answer}` }}</span>
+                            <b-button class="remove-answer-btn" @click.prevent="removeItAnswer(index)">X</b-button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,9 +81,10 @@
                     </div>
                     <div v-if="form.localizedAnswers[1].answers.length" class="mt-1 flex flex-col">
                         <span>Possible answers:</span>
-                        <span v-for="(answer, index) in form.localizedAnswers[1].answers" :key="index">
-                            {{ `${index + 1} - ${answer}` }}
-                        </span>
+                        <div  v-for="(answer, index) in form.localizedAnswers[1].answers" :key="index" class="flex">
+                            <span>{{ `${index + 1} - ${answer}` }}</span>
+                            <b-button class="remove-answer-btn" @click.prevent="removeEnAnswer(index)">X</b-button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,12 +143,20 @@ export default defineComponent({
                 localizedAnswersIt.value = ''
             }
         }
+
+        function removeItAnswer(index) {
+            form.localizedAnswers[0].answers.splice(index, 1);
+        }
         
         function addEnAnswer() {
             if (localizedAnswersEn.value) {
                 form.localizedAnswers[1].answers.push(localizedAnswersEn.value)
                 localizedAnswersEn.value = ''
             }
+        }
+
+        function removeEnAnswer(index) {
+            form.localizedAnswers[1].answers.splice(index, 1);
         }
 
         return {
@@ -158,7 +168,18 @@ export default defineComponent({
             save,
             addItAnswer,
             addEnAnswer,
+            removeItAnswer,
+            removeEnAnswer,
         }
     }
 })
 </script>
+
+<style lang="scss">
+.remove-answer-btn {
+    background-color: red;
+    padding: 0px 4px;
+    border-color: red;
+    margin-left: 8px;
+}
+</style>
