@@ -50,7 +50,7 @@ export default function useSurveys() {
         loading.value = true;
 
         return client
-            .post("/backend/surveys/", data)
+            .post("/backend/surveys", data)
             .then((res) => {
                 return res.data;
             })
