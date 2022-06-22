@@ -1,0 +1,30 @@
+{
+   "order":"1",
+   "protocolQuestion":"test",
+   "primaryKey":"id-univoco",
+   "localizedQuestion":[
+      {
+         "question":"test question",
+         "lng":"ita"
+      }
+   ],
+   "localizedQuestionDescription":[
+      {
+         "description":"testo domanda test?",
+         "lng":"ita"
+      }
+   ],
+   "localizedAnswers":[
+      {
+         "lng":"ita",
+         "answers":[
+            "Per nulla",
+            "Un po’",
+            "Abbastanza",
+            "Molto",
+            "Moltissimo"
+         ]
+      }
+   ],
+   "protocol":""
+}
