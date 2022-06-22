@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Str;
 
+$jdbcParsing = array();
+preg_match('/jdbc:postgresql:\/\/(.*):(.*)\/(.*)/', env('SPRING_DATASOURCE_URL'), $jdbcParsing);
+
 return [
 
     /*
@@ -71,6 +74,21 @@ return [
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
+
+        'entandopgsql' => [
+            'driver' => 'pgsql',
+            'url' => env('DATABASE_URL'),
+            'host' => $jdbcParsing[1],
+            'port' => $jdbcParsing[2],
+            'database' => $jdbcParsing[3],
+            'username' => env('SPRING_DATASOURCE_USERNAME', 'forge'),
+            'password' => env('SPRING_DATASOURCE_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
