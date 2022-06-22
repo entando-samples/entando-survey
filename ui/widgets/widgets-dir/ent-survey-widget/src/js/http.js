@@ -32,7 +32,7 @@ client.interceptors.response.use(
         return response;
     },
     error => {
-        if (error.response.status === 401) {
+        if (error.response && error.response.status === 401) {
             entando.keycloak.updateToken(300);
         }
         return Promise.reject(error);

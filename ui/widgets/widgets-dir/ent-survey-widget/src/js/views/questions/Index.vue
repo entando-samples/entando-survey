@@ -27,35 +27,13 @@
                     </svg>
                 </div>
             </div>
-            <div class="w-3/5 space-y-2">
-                <p class="text-sm">Filtra per</p>
-                <div class="flex items-start space-x-3">
-                    <div class="w-1/3">
-                        <b-select
-                            v-model="filterParameters.questions"
-                            placeholder="Question"
-                            :options="filters.questions"
-                            :searchable="true"
-                            :multiple="true"
-                        ></b-select>
-                    </div>
-                    <div class="w-1/3">
-                        <b-select
-                            v-model="filterParameters.protocols"
-                            placeholder="Protocol"
-                            :options="filters.protocols"
-                            :multiple="true"
-                        ></b-select>
-                    </div>
-                </div>
+            <div class="w-3/5 space-y-2 mt-5 flex flex-row-reverse">
+                <router-link to="/questions/create">
+                    <b-button class="py-2">Crea nuova domanda</b-button>
+                </router-link>
             </div>
         </div>
 
-        <div class="mt-5 flex flex-row-reverse">
-            <router-link to="/questions/create">
-                <b-button class="py-2">Crea nuova domanda</b-button>
-            </router-link>
-        </div>
         <b-block class="mt-5">
             <table class="table-auto w-full text-sm">
                 <thead class="uppercase text-white bg-ternary">
@@ -168,8 +146,6 @@ export default defineComponent({
 
         const filterParameters = reactive({
             search: '',
-            questions: '',
-            protocols: '',
         });
 
         const { getQuestions, questions, loading, deleteQuestion, getFilters, filters } = useQuestions()
