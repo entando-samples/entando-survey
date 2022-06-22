@@ -1,4 +1,4 @@
-import { useAuthStore } from "@/stores/auth";
+// import { useAuthStore } from "@/stores/auth";
 import LogoutPage from "@/views/auth/Logout.vue";
 import QuestionFormPage from "@/views/questions/Form.vue";
 import QuestionIndexPage from "@/views/questions/Index.vue";
