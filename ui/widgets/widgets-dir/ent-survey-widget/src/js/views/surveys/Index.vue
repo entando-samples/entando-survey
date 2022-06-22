@@ -23,26 +23,11 @@
           </svg>
         </div>
       </div>
-      <div class="w-3/5 space-y-2">
-        <p class="text-sm">Filtra per</p>
-        <div class="flex items-start space-x-3">
-          <div class="w-1/3">
-            <b-select
-              v-model="filters.pathologies"
-              placeholder="Patologia"
-              label="title"
-              :options="filterData.pathologies"
-              :reduce="(item) => item.id"
-              :multiple="true"
-            ></b-select>
-          </div>
-        </div>
+      <div class="w-3/5 space-y-2 mt-5 flex flex-row-reverse">
+        <router-link to="/surveys/create">
+          <b-button class="py-2">Crea un nuovo questionario</b-button>
+        </router-link>
       </div>
-    </div>
-    <div class="mt-5 flex flex-row-reverse">
-      <router-link to="/surveys/create">
-        <b-button class="py-2">Crea un nuovo questionario</b-button>
-      </router-link>
     </div>
     <b-block class="mt-5">
       <table class="table-auto w-full text-sm">
@@ -322,11 +307,7 @@ export default defineComponent({
   setup(props, { root }) {
     const modals = reactive({ scheduler: false });
     const search = ref("");
-    const filters = reactive({
-      pathologies: root.$route.query?.pathology
-        ? [Number(root.$route.query?.pathology)]
-        : null,
-    });
+    const filters = reactive();
     const deleteSurveyModal = reactive({
       remind: {
         show: false,
@@ -345,20 +326,18 @@ export default defineComponent({
 
     onMounted(() => {
       getFilters();
-      getSurveys({ pathologies: filters.pathologies });
+      getSurveys();
     });
 
     const onSearchChange = debounce(() => {
       getSurveys({
         search: search.value,
-        pathologies: filters.pathologies,
       });
     }, 800);
 
     const onFiltersChange = debounce(() => {
       getSurveys({
         search: search.value,
-        pathologies: filters.pathologies,
       });
     });
 
@@ -377,7 +356,6 @@ export default defineComponent({
       getDocuments({
         page,
         search: search.value,
-        pathologies: filters.pathologies,
       });
     }
 
