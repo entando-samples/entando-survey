@@ -50,28 +50,6 @@
                     />
                 </div>
 
-                <div class="mt-5 flex items-center gap-x-10">
-                    <span>Filtra Per</span>
-                    <div class="flex items-center space-x-4">
-                        <b-select
-                            v-model="formQuestionFilters.questions"
-                            class="inline-block w-80"
-                            placeholder="Question"
-                            :options="questionsFilter.questions"
-                            :multiple="true"
-                        ></b-select>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <b-select
-                            v-model="formQuestionFilters.protocols"
-                            class="inline-block w-80"
-                            placeholder="Protocol"
-                            :options="questionsFilter.protocols"
-                            :multiple="true"
-                        ></b-select>
-                    </div>
-                </div>
-
                 <div class="mt-8 flex items-center space-x-10 text-sm font-semibold">
                     <label class="flex items-center space-x-2">
                         <input
@@ -143,7 +121,8 @@
                                 <p class="mt-1 text-sm">{{ question.description }}</p>
                                 <ul class="mt-2 text-sm space-y-3">
                                     <li
-                                        v-for="answer in question.answers"
+                                        v-for="(answer, index) in question.answers"
+                                        :key="index"
                                         class="flex items-center space-x-6"
                                     >
                                         <div
@@ -274,8 +253,6 @@ export default defineComponent({
 
         const formQuestionFilters = reactive({
             search: '',
-            questions: null,
-            protocols: null,
         });
 
         const isCreating = computed(() => root.$route.name === 'surveys.create');
