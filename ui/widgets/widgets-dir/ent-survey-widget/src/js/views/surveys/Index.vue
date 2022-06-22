@@ -307,7 +307,7 @@ export default defineComponent({
   setup(props, { root }) {
     const modals = reactive({ scheduler: false });
     const search = ref("");
-    const filters = reactive();
+    const filters = reactive({});
     const deleteSurveyModal = reactive({
       remind: {
         show: false,
@@ -342,7 +342,6 @@ export default defineComponent({
     });
 
     watch(search, onSearchChange);
-    watch(filters, onFiltersChange);
 
     async function deleteItem(event, id) {
       await deleteSurvey(id);
