@@ -44,7 +44,7 @@ export default function useQuestions() {
         loading.value = true;
 
         return client
-            .post("/backend/questions/", data)
+            .post("/backend/questions", data)
             .then((res) => {
                 return res.data;
             })
