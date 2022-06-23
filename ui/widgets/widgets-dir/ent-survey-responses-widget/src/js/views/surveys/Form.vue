@@ -29,11 +29,15 @@
                             </p>
                             <ul class="mt-2 text-sm space-y-3">
                                 <li
-                                    v-for="(answer, index) in question.answers"
-                                    :key="index"
+                                    v-for="(answer, answerIndex) in question.answers"
+                                    :key="answerIndex"
                                     class="flex items-center space-x-6"
                                 >
-                                    <div class="border border-primary rounded-sm p-2 w-80 hover:bg-primary hover:text-white cursor-pointer" @click="sendAnswer(answer)">
+                                    <div 
+                                        :class="{'bg-primary text-white': listOfAnswers.find(a => a.answerId === answer.id)}" 
+                                        class="border border-primary rounded-sm p-2 w-80 hover:bg-primary hover:text-white cursor-pointer" 
+                                        @click="sendAnswer(question, answer)"
+                                    >
                                         {{ answer.body }}
                                     </div>
                                 </li>
@@ -95,8 +99,10 @@ export default defineComponent({
       const currentQuestions = questions.data.filter((item) => {
         return form.questions.includes(item.id);
       });
-      return currentQuestions
+      return currentQuestions;
     });
+
+    const listOfAnswers = ref([]);
     
     const flatErrors = computed(() => {
       return (
@@ -127,21 +133,28 @@ export default defineComponent({
 
     watch(formQuestionFilters, onFormQuestionFiltersChange);
 
-    function save() {
+    async function save() {
+        const listOfPrimise = listOfAnswers.value.map(a => {
+            return answerSurvey(root.$route.params.id, a.questionId, {answer: a.answerId})
+            .catch((err) => {
+              Vue.toasted.error(err?.response?.data?.message || err.message);
+            });
+        });
+        await Promise.all(listOfPrimise);
         Vue.toasted.success("updated successfully");
         router.push({
           name: "surveys.index",
         });
     }
 
-    function sendAnswer(answer) {
-        answerSurvey(root.$route.params.id, answer.question_id, {answer: answer.id})
-        .then(res => {
-            Vue.toasted.success("updated successfully");
-        })
-        .catch((err) => {
-          Vue.toasted.error(err?.response?.data?.message || err.message);
-        });
+    function sendAnswer(question, answer) {
+        const exist = listOfAnswers.value.find(item => item.questionId === question.id);
+        if (exist) { 
+            listOfAnswers.value.splice(exist, 1);
+            listOfAnswers.value.push({ questionId: question.id, answerId: answer.id});
+        } else {
+            listOfAnswers.value.push({ questionId: question.id, answerId: answer.id});
+        }
     }
 
     return {
@@ -153,6 +166,7 @@ export default defineComponent({
       questions,
       fullSelectedQuestions,
       form,
+      listOfAnswers,
       save,
       sendAnswer,
     };
