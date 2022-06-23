@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-page-header title="Crea un nuovo questionario"></b-page-header>
-        <div
+        <!-- <div
             class="grid grid-flow-col bg-gray-200 uppercase text-gray-500 text-sm rounded-md multistep"
         >
             <div
@@ -31,7 +31,7 @@
                 >3</span>
                 <p>salva il questionario</p>
             </div>
-        </div>
+        </div> -->
 
         <b-block class="mt-2 py-5" v-if="flatErrors.length" title="Errors:">
             <ul class="list-disc text-red-500">
@@ -104,10 +104,10 @@
                     </p>
                 </b-block>
                 <div class="mt-4 text-right">
-                    <b-button :disabled="form.questions.length < 1" @click="activeStep++">Conferma</b-button>
+                    <b-button :disabled="form.questions.length < 1" @click="activeStep = 3">Conferma</b-button>
                 </div>
             </div>
-            <div v-if="activeStep == 2">
+            <!-- <div v-if="activeStep == 2">
                 <b-block>
                     <ul class="space-y-3" style="max-height: 600px;">
                         <li
@@ -149,7 +149,7 @@
                     <b-button variant="primary-alt" @click="activeStep--">Indietro</b-button>
                     <b-button @click="activeStep++">Conferma</b-button>
                 </div>
-            </div>
+            </div> -->
             <div v-if="activeStep == 3">
                 <b-block>
                     <h2 class="text-primary font-bold flex items-center text-xl">
@@ -181,7 +181,7 @@
                             </button>
                         </template>
                     </h2>
-                    <div class="mt-8">
+                    <!-- <div class="mt-8">
                         <p class="text-sm font-semibold">Associa le patologie al questionario</p>
                         <div class="mt-4 space-x-5">
                             <label>Cerca tra le patalogie:</label>
@@ -196,7 +196,7 @@
                             ></b-select>
                             <b-button @click="selectAllPathologies">select all</b-button>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="mt-8">
                         <p class="text-sm font-semibold">Description</p>
                         <quill-editor
@@ -207,7 +207,7 @@
                     </div>
                 </b-block>
                 <div class="mt-4 text-right">
-                    <b-button variant="primary-alt" @click="activeStep--">Indietro</b-button>
+                    <b-button variant="primary-alt" @click="activeStep = 1">Indietro</b-button>
                     <b-button @click="save" :disabled="loading">Salva questionario</b-button>
                 </div>
             </div>
@@ -353,9 +353,9 @@ export default defineComponent({
                 form.title = form.title.trim() ? form.title : 'Untitled survey';
                 editTitle.value = false
             },
-            selectAllPathologies: () => {
-                form.pathologies = filters.pathologies.map((item) => item.id)
-            },
+            // selectAllPathologies: () => {
+            //     form.pathologies = filters.pathologies.map((item) => item.id)
+            // },
         }
     }
 })

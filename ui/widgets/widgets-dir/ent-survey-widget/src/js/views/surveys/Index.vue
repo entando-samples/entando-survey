@@ -66,7 +66,7 @@
               </td>
               <td class="px-2 py-3 flex justify-center">
                 <div class="flex items-center space-x-2">
-                  <button
+                  <!-- <button
                     @click="modals.scheduler = true"
                     class="
                       px-5
@@ -79,7 +79,7 @@
                     "
                   >
                     Schedule
-                  </button>
+                  </button> -->
 
                   <router-link
                     :is="survey.can_be_edited ? 'router-link' : 'span'"
@@ -133,7 +133,7 @@
                       />
                     </svg>
                   </button>
-                  <router-link
+                  <!-- <router-link
                     :is="survey.patients_count > 0 ? 'router-link' : 'span'"
                     :to="{ path: '/patients', query: { survey: survey.id } }"
                   >
@@ -146,7 +146,7 @@
                       "
                       >({{ survey.patients_count }})</span
                     >
-                  </router-link>
+                  </router-link> -->
                 </div>
               </td>
             </tr>
@@ -172,7 +172,7 @@
         ></b-paginator>
       </div>
     </div>
-    <b-modal
+    <!-- <b-modal
       size="3xl"
       title="schedula il questionario"
       v-if="modals.scheduler"
@@ -253,7 +253,7 @@
           >
         </div>
       </template>
-    </b-modal>
+    </b-modal> -->
 
     <!--confirmation box to delete Questionari -->
     <b-modal
