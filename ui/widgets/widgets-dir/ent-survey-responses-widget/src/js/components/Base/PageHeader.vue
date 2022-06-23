@@ -18,7 +18,7 @@ export default defineComponent({
   props: ["title"],
   setup(props) {
     onMounted(() => {
-      document.title = props.title || "R-Kare";
+      document.title = props.title || "Survey";
     });
   },
 });

@@ -1,10 +1,15 @@
-import Vue from './config.js'
-import { createPinia } from 'pinia';
-import App from './App.vue';
-import router from './router.js';
+import Vue from './js/config'
+import { createPinia} from 'pinia';
+import App from './js/App';
+import router from './js/router';
+import './assets/tailwind.css'
 
+window.laravel = {
+    "appUrl": process.env.VUE_APP_SERVER_SERVLET_CONTEXT_PATH
+};
 
 class EntSurvey extends HTMLElement {
+
     connectedCallback() {
         this.mountPoint = document.createElement('span')
         this.render()
@@ -17,7 +22,7 @@ class EntSurvey extends HTMLElement {
             pinia: createPinia(),
             router,
         });
-    }
+    };
 }
 
 customElements.get('ent-survey-responses-widget') || customElements.define("ent-survey-responses-widget", EntSurvey)

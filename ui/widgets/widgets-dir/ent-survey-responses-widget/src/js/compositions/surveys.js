@@ -37,7 +37,7 @@ export default function useSurveys() {
         const response = await client
             .get("/backend/surveys/" + id)
             .finally(() => (loading.value = false));
-
+        
         survey.title = response.data.data.title;
         survey.description = response.data.data.description;
         survey.pathologies = response.data.data.pathologies.map((item) => item.id);
@@ -50,7 +50,7 @@ export default function useSurveys() {
         loading.value = true;
 
         return client
-            .post("/backend/surveys/", data)
+            .post("/backend/surveys", data)
             .then((res) => {
                 return res.data;
             })
@@ -84,6 +84,21 @@ export default function useSurveys() {
         return client.delete(`/backend/surveys/${id}`);
     }
 
+    function answerSurvey(surveyId, questionId, data) {
+        validator.reset();
+        loading.value = true;
+        console.log('answerSurvey', surveyId, questionId, data); 
+        return client
+            .post(`/backend/surveys/${surveyId}/questions/${questionId}/answer`, data)
+            .catch((error) => {
+                if (validator.isValidationError(error)) {
+                    validator.adaptErr(error);
+                }
+                throw error;
+            })
+            .finally(() => (loading.value = false));
+    }
+
     return {
         errors: validator.errors,
         surveys,
@@ -94,5 +109,6 @@ export default function useSurveys() {
         saveSurvey,
         updateSurvey,
         deleteSurvey,
+        answerSurvey,
     };
 }
