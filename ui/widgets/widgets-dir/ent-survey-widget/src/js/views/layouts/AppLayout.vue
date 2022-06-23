@@ -3,7 +3,7 @@
         <div class="flex flex-col w-full" style="margin: 0 auto;">
             <aside class="fixed hidden md:block md:w-sidebar h-full bg-ternary z-20">
                 <div class="h-header px-4 flex items-center bg-secondary text-white">
-                    <span class="font-bold text-4xl">R-kare</span>
+                    <span class="font-bold text-4xl">Survey</span>
                 </div>
                 <Navigation />
             </aside>
@@ -16,7 +16,7 @@
                     <router-view></router-view>
                 </main>
                 <footer class="py-2 mx-auto bg-white z-10">
-                    <div class="container mx-auto px-4 text-gray-500">R-Kare</div>
+                    <div class="container mx-auto px-4 text-gray-500">Survey</div>
                 </footer>
             </div>
         </div>
