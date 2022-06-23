@@ -135,7 +135,7 @@ export default defineComponent({
     }
 
     function sendAnswer(answer) {
-        answerSurvey(root.$route.params.id, answer.question_id)
+        answerSurvey(root.$route.params.id, answer.question_id, {answer: answer.id})
         .then(res => {
             Vue.toasted.success("updated successfully");
         })

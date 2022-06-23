@@ -89,7 +89,7 @@ export default function useSurveys() {
         loading.value = true;
         console.log('answerSurvey', surveyId, questionId, data); 
         return client
-            .post(`/backend/surveys/${surveyId}/questions/${questionId}/answer`, data)
+            .post(`/surveys/${surveyId}/questions/${questionId}/answer`, data)
             .catch((error) => {
                 if (validator.isValidationError(error)) {
                     validator.adaptErr(error);

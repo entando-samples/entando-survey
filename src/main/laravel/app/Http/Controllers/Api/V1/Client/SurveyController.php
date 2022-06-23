@@ -13,6 +13,7 @@ use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Log;
 
 class SurveyController extends Controller
 {
@@ -56,10 +57,11 @@ class SurveyController extends Controller
     {
         /** @var \App\Models\User */
         $patient = auth()->user();
+        Log::debug($patient);
 
-        $survey = $patient->surveys()
-            ->whereHas('questions', fn ($q) => $q->where('questions.id', $questionId))
-            ->findOrFail($surveyId);
+        // $survey = $patient->surveys()
+        //     ->whereHas('questions', fn ($q) => $q->where('questions.id', $questionId))
+        //     ->findOrFail($surveyId);
 
 
         //validate question_id
@@ -82,26 +84,7 @@ class SurveyController extends Controller
                 ]
             ]);
 
-            $isWarnableAnswer = $survey->warningAnswers()
-                ->where("answer_id", request('answer'))
-                ->exists();
-
-            if (!$isWarnableAnswer) return;
-
-            if (!$patient->is_alertable) {
-                $patient->update([
-                    'is_alertable' => true,
-                ]);
-            }
-
-            if (!$survey->is_alertable) {
-                $survey->update([
-                    'is_alertable' => true,
-                ]);
-            }
         }, 2);
-
-        $surveyService->markSurveyCompleted($surveyId, $patient);
 
         return success("Answer saved successfully");
     }
