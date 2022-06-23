@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie', env('SERVER_SERVLET_CONTEXT_PATH', '') . '/*'],
+    'paths' => ['api/*', 'sanctum/csrf-cookie', str_replace('/', '', env('SERVER_SERVLET_CONTEXT_PATH', '')) . '/*'],
 
     'allowed_methods' => ['*'],
 

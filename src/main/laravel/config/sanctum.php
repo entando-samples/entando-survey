@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'prefix' => env('SERVER_SERVLET_CONTEXT_PATH', ''),
+    'prefix' => str_replace('/', '', env('SERVER_SERVLET_CONTEXT_PATH', '')),
 
     'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(
         '%s%s',
