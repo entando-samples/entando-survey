@@ -224,7 +224,7 @@ import 'quill/dist/quill.bubble.css';
 import 'quill/dist/quill.core.css';
 import 'quill/dist/quill.snow.css';
 import { quillEditor } from 'vue-quill-editor';
-import useDocumentsFilter from "@/compositions/documentFilters";
+// import useDocumentsFilter from "@/compositions/documentFilters";
 import router from "../../router";
 import Vue from "vue";
 
@@ -249,7 +249,7 @@ export default defineComponent({
         const { survey: form, saveSurvey, errors, getSurvey, updateSurvey, loading } = useSurveys();
         const activeStep = ref(1);
         const { loading: loadingQuestions, getQuestions, questions, filters: questionsFilter, getFilters: getQuestionsFilter } = useQuestions();
-        const { filters, getFilters } = useDocumentsFilter();
+        // const { filters, getFilters } = useDocumentsFilter();
 
         const formQuestionFilters = reactive({
             search: '',
@@ -274,7 +274,7 @@ export default defineComponent({
         function onCreated() {
             getQuestionsFilter();
             getQuestions({ paginated: false, withAnswers: true });
-            getFilters();
+            // getFilters();
 
             if (isCreating.value) return;
 
@@ -340,7 +340,7 @@ export default defineComponent({
             isCreating,
             flatErrors,
             formQuestionFilters,
-            filters,
+            // filters,
             loadingQuestions,
             questions,
             fullSelectedQuestions,

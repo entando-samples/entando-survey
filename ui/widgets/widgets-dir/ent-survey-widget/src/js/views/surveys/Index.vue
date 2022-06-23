@@ -298,7 +298,7 @@ import {
   watch,
 } from "@vue/composition-api";
 import useSurveys from "@/compositions/surveys";
-import useDocumentsFilter from "@/compositions/documentFilters";
+// import useDocumentsFilter from "@/compositions/documentFilters";
 import debounce from "lodash/debounce";
 import Vue from "vue";
 
@@ -316,7 +316,7 @@ export default defineComponent({
     });
 
     const { getSurveys, surveys, loading, deleteSurvey } = useSurveys();
-    const { getFilters, filters: filterData } = useDocumentsFilter();
+    // const { getFilters, filters: filterData } = useDocumentsFilter();
 
     console.log("surveys ", surveys);
     async function confirmDeleteModal(e, survey) {
@@ -325,7 +325,7 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      getFilters();
+      // getFilters();
       getSurveys();
     });
 
@@ -365,7 +365,7 @@ export default defineComponent({
       modals,
       filters,
       search,
-      filterData,
+      // filterData,
       surveys,
       loading,
       onPageChange,
