@@ -3,7 +3,7 @@
         <b-page-header title="Crea nuovo documento" />
         <form class="bg-white p-4 rounded-md w-full">
             <div class="question-it">
-                <label for="questionIt" class="font-semibold">Domanda (ITA)</label>
+                <label for="questionIt" class="font-semibold">Domanda</label>
                 <div class="mt-1">
                     <input 
                         v-model="form.localizedQuestion[0].question"
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="question-description-it mt-2">
-                <label for="questionDescriptionIt" class="font-semibold">Descrizione domanda (ITA)</label>
+                <label for="questionDescriptionIt" class="font-semibold">Testo domanda</label>
                 <div class="mt-1">
                     <input 
                         v-model="form.localizedQuestionDescription[0].description"
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="answers-it mt-2">
-                <label for="answersIt" class="font-semibold">Risposte (ITA)</label>
+                <label for="answersIt" class="font-semibold">Risposte</label>
                 <div class="mt-1 flex flex-col">
                     <div class="flex">
                         <input 
@@ -41,49 +41,6 @@
                         <div v-for="(answer, index) in form.localizedAnswers[0].answers" :key="index" class="flex">
                             <span>{{ `${index + 1} - ${answer}` }}</span>
                             <b-button class="remove-answer-btn" @click.prevent="removeItAnswer(index)">X</b-button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="question-en mt-2">
-                <label for="questionEn" class="font-semibold">Question (ENG)</label>
-                <div class="mt-1">
-                    <input 
-                        v-model="form.localizedQuestion[1].question"
-                        type="text"
-                        class="w-full border border-primary px-2 py-1 focus-within:outline-none"
-                        id="questionEn"
-                    />
-                </div>
-            </div>
-            <div class="question-description-en mt-2">
-                <label for="questionDescriptionEn" class="font-semibold">Question's description (ENG)</label>
-                <div class="mt-1">
-                    <input 
-                        v-model="form.localizedQuestionDescription[1].description"
-                        type="text"
-                        class="w-full border border-primary px-2 py-1 focus-within:outline-none"
-                        id="questionDescriptionEn"
-                    />
-                </div>
-            </div>
-            <div class="answers-en mt-2">
-                <label for="answersEn" class="font-semibold">Answers (ENG)</label>
-                <div class="mt-1 flex flex-col">
-                    <div class="flex">
-                        <input 
-                            v-model="localizedAnswersEn"
-                            type="text"
-                            class="border border-primary px-2 py-1 focus-within:outline-none"
-                            id="answersEn"
-                        />
-                        <b-button class="ml-4" :disabled="!localizedAnswersEn" @click.prevent="addEnAnswer">Add possible answer</b-button>
-                    </div>
-                    <div v-if="form.localizedAnswers[1].answers.length" class="mt-1 flex flex-col">
-                        <span>Possible answers:</span>
-                        <div  v-for="(answer, index) in form.localizedAnswers[1].answers" :key="index" class="flex">
-                            <span>{{ `${index + 1} - ${answer}` }}</span>
-                            <b-button class="remove-answer-btn" @click.prevent="removeEnAnswer(index)">X</b-button>
                         </div>
                     </div>
                 </div>
@@ -106,19 +63,16 @@ export default defineComponent({
     setup(props, { root }) {
         const form = reactive({
             localizedQuestion: [
-                { question: '', lng: 'ita' },
-                { question: '', lng: 'eng' },
+                { question: '' },
             ],
             localizedQuestionDescription: [
-                { description: '', lng: 'ita' },
-                { description: '', lng: 'eng' },
+                { description: '' },
             ],
             localizedAnswers: [
-                { answers: [], lng: 'ita' },
-                { answers: [], lng: 'eng' },
+                { answers: [] },
             ],
             primaryKey: '',
-            order: '',
+            order: 0,
             protocolQuestion: '',
             scores: [],
             protocol: ''
@@ -130,8 +84,12 @@ export default defineComponent({
         const { errors, loading, saveQuestion } = useQuestions();
 
         function save() {
-            console.log(form)
-            saveQuestion(form).then(({ message }) => {
+            form.primaryKey = form.localizedQuestion[0].question
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, "-")
+                .replace(/^-+|-+$/g, "-")
+                .replace(/^-+|-+$/g, '');
+            saveQuestion({json: JSON.stringify(form)}).then(({ message }) => {
                 Vue.toasted.success(message);
                 router.replace('/questions');
             })
