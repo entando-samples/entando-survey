@@ -155,7 +155,7 @@
             <tr>
               <td colspan="5">
                 <div class="text-gray-600 text-center py-3">
-                  Loading surveys....
+                  Caricamento questionari...
                 </div>
               </td>
             </tr>
