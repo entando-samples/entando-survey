@@ -264,7 +264,7 @@
       <h3>
         Stai per eliminare questo sondaggio
 
-        <span class="font-bold">{{
+        <span class="font-bold text-gray-500">{{
           deleteSurveyModal.remind.survey.title
         }}</span
         >.
@@ -377,9 +377,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-span {
-  @apply text-gray-500;
-}
-</style>
