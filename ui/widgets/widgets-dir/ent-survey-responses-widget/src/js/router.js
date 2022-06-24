@@ -1,19 +1,19 @@
-import { useAuthStore } from "@/stores/auth";
+// import { useAuthStore } from "@/stores/auth";
 import LogoutPage from "@/views/auth/Logout.vue";
+import SurveyIndexPage from "@/views/surveys/Index.vue";
+import SurveyFormPage from "@/views/surveys/Form.vue";
 import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
 import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
-import ResponsesIndexPage from '@/views/responses/Index.vue';
-import ResponsesFormPage from '@/views/responses/Form.vue';
 import VueRouter from "vue-router";
 
 const auth = {
     logout: LogoutPage
 };
 
-const responses = {
-    index: ResponsesIndexPage,
-    form: ResponsesFormPage,
+const surveys = {
+    index: SurveyIndexPage,
+    form: SurveyFormPage,
 };
 
 const errors = {
@@ -31,16 +31,22 @@ const router = new VueRouter({
                 guest: true,
                 // auth: true,
             },
+            redirect: "surveys",
             children: [
                 {
-                    path: "responses",
-                    name: "reponses.index",
-                    component: responses.index,
+                    path: "surveys",
+                    name: "surveys.index",
+                    component: surveys.index,
                 },
                 {
-                    path: "responses/:id",
-                    name: "responses.answer",
-                    component: responses.form,
+                    path: "surveys/create",
+                    name: "surveys.create",
+                    component: surveys.form,
+                },
+                {
+                    path: "surveys/:id",
+                    name: "surveys.edit",
+                    component: surveys.form,
                 },
                 {
                     path: "logout",
@@ -83,7 +89,7 @@ const router = new VueRouter({
 //     } else if (to.matched.some((record) => record.meta.guest)) {
 //         if (authStore.isAuthenticated) {
 //             next({
-//                 name: "responses",
+//                 name: "questions",
 //             });
 //         } else {
 //             next();

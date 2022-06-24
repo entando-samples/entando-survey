@@ -38,9 +38,9 @@
             <table class="table-auto w-full text-sm">
                 <thead class="uppercase text-white bg-ternary">
                     <tr class="font-semibold text-left">
-                        <td class="p-2">key</td>
-                        <td class="p-2">title</td>
-                        <td class="p-2">description</td>
+                        <td class="p-2">Chiave</td>
+                        <td class="p-2">Titolo</td>
+                        <td class="p-2">Descrizione</td>
                         <td></td>
                     </tr>
                 </thead>
@@ -48,7 +48,7 @@
                     <template v-if="!loading">
                         <tr v-if="!questions.data.length">
                             <td colspan="4">
-                                <div class="text-gray-600 text-center py-3">No questions available</div>
+                                <div class="text-gray-600 text-center py-3">Nessuna domanda disponibile</div>
                             </td>
                         </tr>
                         <tr
@@ -98,7 +98,7 @@
                     <template v-else-if="loading">
                         <tr>
                             <td colspan="4">
-                                <div class="text-gray-600 text-center py-3">Loading questions....</div>
+                                <div class="text-gray-600 text-center py-3">Caricamento domande...</div>
                             </td>
                         </tr>
                     </template>
@@ -123,7 +123,7 @@
             <p
                 v-else
                 class="text-sm text-center text-gray-600"
-            >No answers available for the selected question</p>
+            >Non ci sono risposte per la domanda selezionata</p>
         </b-modal>
     </div>
 </template>
