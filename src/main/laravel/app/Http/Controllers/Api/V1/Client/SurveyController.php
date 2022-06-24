@@ -74,17 +74,17 @@ class SurveyController extends Controller
         ]);
 
 
-        $surveyService->checkIfExist($surveyId, $questionId, $patient->id);
+        // $surveyService->checkIfExist($surveyId, $questionId, $patient->id);
 
-        DB::transaction(function () use ($survey, $patient, $questionId) {
-            $survey->patientAnswers()->attach([
-                request('answer') => [
-                    'patient_id' => $patient->id,
-                    'question_id' => $questionId,
-                ]
-            ]);
+        // DB::transaction(function () use ($survey, $patient, $questionId) {
+        //     $survey->patientAnswers()->attach([
+        //         request('answer') => [
+        //             'patient_id' => $patient->id,
+        //             'question_id' => $questionId,
+        //         ]
+        //     ]);
 
-        }, 2);
+        // }, 2);
 
         return success("Answer saved successfully");
     }
