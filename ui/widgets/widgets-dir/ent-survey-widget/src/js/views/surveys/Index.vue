@@ -34,7 +34,7 @@
         <thead class="uppercase text-white bg-ternary">
           <tr class="font-semibold text-left">
             <td class="p-2">title</td>
-            <td class="p-2">pathologies</td>
+            <td class="p-2"></td>
             <td></td>
           </tr>
         </thead>
@@ -43,7 +43,7 @@
             <tr v-if="!surveys.data.length">
               <td colspan="3">
                 <div class="text-gray-600 text-center py-3">
-                  No surveys available
+                  Nessun questionario disponibile
                 </div>
               </td>
             </tr>
