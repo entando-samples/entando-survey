@@ -6,7 +6,9 @@ use App\Http\Controllers\Api\V1\Backend;
 use App\Http\Controllers\Api\V1\Backend\UserController;
 
 Route::get('/test',function(){
-   return auth()->user()->token;
+
+//    return config('keycloak.realm_public_key');
+   return auth()->user();
 });
 
 
