@@ -18,6 +18,7 @@ class JDBCParserProvider extends ServiceProvider
     {
         $jdbcParsing = array();
         preg_match('/jdbc:postgresql:\/\/(.*):(.*)\/(.*)/', env('SPRING_DATASOURCE_URL'), $jdbcParsing);
+
         Log::debug([
                 'database.entandopgsql.driver' => 'pgsql',
                 'database.entandopgsql.host' => $jdbcParsing[1],
