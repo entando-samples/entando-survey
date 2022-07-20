@@ -180,7 +180,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\JDBCParserProvider::class,
-        App\Providers\KeycloakServiceProvider::class
+//        App\Providers\KeycloakServiceProvider::class
     ],
 
     /*
