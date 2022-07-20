@@ -48,10 +48,9 @@ USER www-data
 #    chown -R www-data:www-data /var/www/ && \
 
 
-RUN php artisan config:cache && \
-    php artisan route:cache && \
-    php artisan key:generate && \
-    php artisan storage:link
+# RUN php artisan config:cache && \
+#   php artisan route:cache && \
+RUN php artisan key:generate
 
 USER root
 EXPOSE 8081
