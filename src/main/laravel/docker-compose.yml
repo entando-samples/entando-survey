@@ -27,7 +27,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.single
+      dockerfile: Dockerfile
     ports:
       - "8081:8081"
     environment:
