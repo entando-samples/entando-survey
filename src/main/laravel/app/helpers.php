@@ -54,3 +54,14 @@ function makeTestFile($type = 'image'): string
 
     return Storage::url($path);
 }
+
+function JDBCParsing($jdbcString): array 
+{
+    $jdbcParsing = array();
+    preg_match('/jdbc:postgresql:\/\/(.*):(.*)\/(.*)/', $jdbcString, $jdbcParsing);
+    return array(
+        'host' => $jdbcParsing[1],
+        'port' => $jdbcParsing[2],
+        'database' => $jdbcParsing[3],
+    );
+} 
