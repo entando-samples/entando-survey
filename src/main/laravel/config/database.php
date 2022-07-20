@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Str;
 
-
 return [
 
     /*
@@ -82,9 +81,9 @@ return [
         'entandopgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
-            'host' => '',
-            'port' => '',
-            'database' => '',
+            'host' => JDBCParsing(env('SPRING_DATASOURCE_URL'))['host'],
+            'port' => JDBCParsing(env('SPRING_DATASOURCE_URL'))['port'],
+            'database' => JDBCParsing(env('SPRING_DATASOURCE_URL'))['database'],
             'username' => env('SPRING_DATASOURCE_USERNAME', 'forge'),
             'password' => env('SPRING_DATASOURCE_PASSWORD', ''),
             'charset' => 'utf8',
