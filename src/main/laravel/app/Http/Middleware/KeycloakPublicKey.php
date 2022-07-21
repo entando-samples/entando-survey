@@ -10,10 +10,9 @@ class KeycloakPublicKey
 {
     public function handle(Request $request, \Closure $next)
     {
-
         $keycloakAuthService = new KeycloakAuthService();
         try{
-            $publicKey = $keycloakAuthService->handle();
+            $publicKey = $keycloakAuthService->handle($request->header('Authorization'));
 
             config(['keycloak.realm_public_key'=>$publicKey]);
             return $next($request);
