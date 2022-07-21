@@ -14,9 +14,13 @@ class KeycloakAuthService
      * @throws \CoderCat\JWKToPEM\Exception\JWKConverterException
      * @throws \Exception
      */
-    public function handle(array $params)
+    public function handle(string $authorizationString)
     {
-        return cache()->remember('realm_public_key',60*2, function() use ($params) {
+        return cache()->remember('realm_public_key',60*2, function() use ($authorizationString) {
+            $auth = explode(' ', $authorizationString);
+            $decoded = array_map('base64_decode', explode('.', $auth[1]));
+            $params = json_decode($decoded[0], true);
+
             $certs = $this->getCert();
 
             $publicKey = $this->getPublicKey($certs, $params);
