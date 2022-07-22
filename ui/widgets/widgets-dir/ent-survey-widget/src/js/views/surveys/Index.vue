@@ -133,20 +133,14 @@
                       />
                     </svg>
                   </button>
-                  <!-- <router-link
-                    :is="survey.patients_count > 0 ? 'router-link' : 'span'"
-                    :to="{ path: '/patients', query: { survey: survey.id } }"
+                  <router-link
+
+                      :to="{ name: 'my-survey-answer', params: { id: survey.id } }"
+                      class="p-1 border-2 border-primary rounded bg-primary"
+
                   >
-                    <span
-                      class="cursor-pointer underline text-green-700"
-                      :class="
-                        survey.patients_count > 0 ?
-                        'hover:text-green-900 hover:font-extrabold'
-                        :'cursor-not-allowed'
-                      "
-                      >({{ survey.patients_count }})</span
-                    >
-                  </router-link> -->
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path> <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                  </router-link>
                 </div>
               </td>
             </tr>

@@ -14,12 +14,16 @@ class KeycloakPublicKey
         $keycloakAuthService = new KeycloakAuthService();
         try{
             $publicKey = $keycloakAuthService->handle();
-
+//            dd($publicKey);
             config(['keycloak.realm_public_key'=>$publicKey]);
             return $next($request);
         } catch (\Exception $e){
             Log::error($e->getMessage());
-            abort(503);
+            if(!$request->expectsJson()):
+                abort(500);
+            else:
+                return response()->json(['message'=>'Keycloak error'],500);
+            endif;
         }
 
 

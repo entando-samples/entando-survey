@@ -43,10 +43,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api.php'));
 
-            Route::prefix(config('entando.server_servlet_context_path') )
-                ->middleware('web')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/web.php'));
+//            Route::prefix(config('entando.server_servlet_context_path') )
+//                ->middleware('web')
+//                ->namespace($this->namespace)
+//                ->group(base_path('routes/web.php'));
 
             Route::prefix(config('entando.server_servlet_context_path') . '/api/v1')
                 ->middleware('api')

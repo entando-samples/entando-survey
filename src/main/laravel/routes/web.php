@@ -1,5 +1,5 @@
 <?php
 
-//Route::get('/',function(){
-//   dd(config('database.entandopgsql'));
-//});
+Route::get('/',function(){
+  dd(\Illuminate\Support\Facades\DB::getPdo());
+});

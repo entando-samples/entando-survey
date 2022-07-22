@@ -15,13 +15,13 @@ class KeycloakAuthService
      */
     public function handle()
     {
-        return cache()->remember('realm_public_key',60*2,function(){
+//        return cache()->remember('realm_public_key',60*2,function(){
             $certs = $this->getCert();
 
             $publicKey = $this->getPublicKey($certs);
 
             return $this->stringifyPublicKey($publicKey);
-        });
+//        });
 
     }
 

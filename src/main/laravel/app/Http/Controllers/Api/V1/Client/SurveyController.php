@@ -7,10 +7,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\SurveyListResource;
 use App\Http\Resources\SurveyResource;
 use App\Models\PatientAnswer;
+use App\Models\PatientSurveyPivot;
 use App\Models\Survey;
 use App\Services\SurveyService;
 use Carbon\Carbon;
 use Exception;
+use http\Env\Response;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Log;
@@ -31,47 +34,69 @@ class SurveyController extends Controller
 
     public function show($id)
     {
+
         /** @var \App\Models\User */
         $user = auth()->user();
 
-        $survey = $user->surveys()
-            ->findOrFail($id);
+        $survey = Survey::
+            findOrFail($id);
 
-        $survey->load([
-            'questions' => fn ($q) => $q
-                ->with(['answers'])
-                ->select(['questions.id', 'questions.description as question'])
-        ]);
+        $survey->load(['pathologies', 'questions', 'warningAnswers','questions.answers']);
 
-        $patientAnswers = $survey
-            ->patientAnswers()
-            ->where('patient_id', auth()->id())
-            ->pluck('patient_answers.answer_id', 'patient_answers.question_id');
+        return success($survey);
 
-        $survey->questions->each(fn ($question) => $question->patient_answer = $patientAnswers[$question->id] ?? null);
+//        $survey->load([
+//            'questions' => fn ($q) => $q
+//                ->with(['answers'])
+//                ->select(['questions.id', 'questions.description as question'])
+//        ]);
 
-        return SurveyResource::make($survey);
+
+
+//        $survey->questions->each(fn ($question) => $question->patient_answer = $patientAnswers[$question->id] ?? null);
+
+//        return SurveyResource::make($survey);
     }
 
-    public function storeAnswer($surveyId, $questionId, SurveyService $surveyService)
+    public function storeAnswer(Request $request,$surveyId)
     {
-        /** @var \App\Models\User */
-        $patient = auth()->user();
-        Log::debug($patient);
 
-        // $survey = $patient->surveys()
-        //     ->whereHas('questions', fn ($q) => $q->where('questions.id', $questionId))
-        //     ->findOrFail($surveyId);
-
-
-        //validate question_id
-        request()->validate([
-            'answer' => [
-                'required',
-                'numeric',
-                Rule::exists('answers', 'id')->where('question_id', $questionId)
-            ]
+        $request->validate([
+            'value.*.question_id'=>'required|numeric|exists:questions,id',
+            'value.*.answer_id'=>'required|numeric|exists:answers,id',
         ]);
+
+        $survey = Survey::find($surveyId);
+        if(!$survey):
+            return response()->json(['message'=>'Survey not found'],404);
+        endif;
+
+        $patient = auth()->user();
+
+        $surveyCompleted = PatientSurveyPivot::where('patient_id',$patient['token']->email)
+            ->where('survey_id',$surveyId)
+            ->count();
+        if ($surveyCompleted){
+            return response()->json(['message'=>'Survey already completed'],409);
+        }
+
+
+        PatientSurveyPivot::create([
+            'patient_id'=>$patient['token']->email,
+            'survey_id'=>$surveyId
+        ]);
+
+        foreach ($request->value as $answers):
+
+            PatientAnswer::create([
+                'survey_id'=>$surveyId,
+                'question_id'=>$answers['question_id'],
+                'answer_id'=>$answers['answer_id'],
+                'patient_id'=>$patient['token']->email
+            ]);
+        endforeach;
+
+
 
 
         // $surveyService->checkIfExist($surveyId, $questionId, $patient->id);
@@ -86,6 +111,6 @@ class SurveyController extends Controller
 
         // }, 2);
 
-        return success("Answer saved successfully");
+        return response()->json(['message'=>"Answer saved successfully"]);
     }
 }

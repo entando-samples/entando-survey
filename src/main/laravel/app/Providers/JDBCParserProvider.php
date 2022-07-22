@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Answer;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 
@@ -46,6 +47,8 @@ class JDBCParserProvider extends ServiceProvider
                     'database.entandopgsql.schema' => 'public',
                     'database.entandopgsql.sslmode' => 'require',
                 ]);
+
+//                dd(config('database.entandopgsql'));
             }
 
         } catch (\Exception $e) {

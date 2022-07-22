@@ -15,7 +15,8 @@ Route::get('/test',function(){
  Route::group(['middleware' => 'auth:api'], function () {
     Route::get('/surveys', [Client\SurveyController::class, 'index']);
     Route::get('/surveys/{id}', [Client\SurveyController::class, 'show']);
-    Route::post('/surveys/{surveyId}/questions/{questionId}/answer', [Client\SurveyController::class, 'storeAnswer']);
+    Route::get('/my-surveys',[Client\SurveyController::class,'index']);
+    Route::post('/surveys/response/{surveyId}', [Client\SurveyController::class, 'storeAnswer']);
  });
 
 Route::group(['prefix' => 'backend', 'middleware' => 'auth:api'], function () {
