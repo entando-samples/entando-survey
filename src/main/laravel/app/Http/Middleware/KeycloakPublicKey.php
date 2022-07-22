@@ -11,10 +11,13 @@ class KeycloakPublicKey
     public function handle(Request $request, \Closure $next)
     {
         $keycloakAuthService = new KeycloakAuthService();
-        try{
-            $publicKey = $keycloakAuthService->handle($request->header('Authorization'));
+        try {
+            if ($request->headers->has('Authorization')) {
+                $publicKey = $keycloakAuthService->handle($request->header('Authorization'));
 
-            config(['keycloak.realm_public_key'=>$publicKey]);
+                config(['keycloak.realm_public_key'=>$publicKey]);
+            }
+
             return $next($request);
         } catch (\Exception $e){
             Log::error($e->getMessage());
