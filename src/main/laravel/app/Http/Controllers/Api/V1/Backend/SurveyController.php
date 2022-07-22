@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api\V1\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\AssignSurveyPatientRequest;
 use App\Http\Requests\Backend\SurveyRequest;
 use App\Jobs\RemindSurvey;
 use App\Models\Answer;
@@ -18,17 +17,14 @@ class SurveyController extends Controller
         $surveys =  Survey::query()
             ->latest()
             ->search(request('search'))
-            ->whereInPathologies(request('pathologies'))
             ->select(['id', 'title'])
-            ->with(['pathologies:id,title'])
-//            ->withCount(['patients'])
             ->paginate()
             ->through(function ($item) {
                 $item->can_be_edited =  $item->canBeEdited();
                 return $item;
             })
         ;
-        // dd($surveys);
+
 
         return success($surveys);
     }
@@ -63,7 +59,7 @@ class SurveyController extends Controller
 
     public function show(Survey $survey)
     {
-        $survey->load(['pathologies', 'questions', 'warningAnswers']);
+        $survey->load(['questions', 'warningAnswers']);
 
         return success($survey);
     }
@@ -114,22 +110,4 @@ class SurveyController extends Controller
         return success(null, "Survey deleted successfully");
     }
 
-    public function assignSurveyToPatient(AssignSurveyPatientRequest $request)
-    {
-        $data = $request->validated();
-        $patient = User::findOrFail($data['patient_id']);
-        $patient->surveys()->attach(
-            [
-                'survey_id' => $data['survey_id'],
-            ],
-            [
-                'send_via' => 'DIRECT'
-            ]
-        );
-        $survey = Survey::find($data['survey_id']);
-        $notificationTitle = "New survey";
-        RemindSurvey::dispatch($patient,$survey,$notificationTitle);
-
-        return success([], "Survey assinged to patient successfull.");
-    }
 }

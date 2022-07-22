@@ -2,21 +2,12 @@
 
 namespace App\Http\Controllers\Api\V1\Client;
 
-use App\Exceptions\AlreadyExist;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\SurveyListResource;
-use App\Http\Resources\SurveyResource;
 use App\Models\PatientAnswer;
 use App\Models\PatientSurveyPivot;
 use App\Models\Survey;
-use App\Services\SurveyService;
-use Carbon\Carbon;
-use Exception;
-use http\Env\Response;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Validation\Rule;
-use Illuminate\Support\Facades\Log;
 
 class SurveyController extends Controller
 {
@@ -41,21 +32,10 @@ class SurveyController extends Controller
         $survey = Survey::
             findOrFail($id);
 
-        $survey->load(['pathologies', 'questions', 'warningAnswers','questions.answers']);
+        $survey->load(['questions', 'warningAnswers','questions.answers']);
 
         return success($survey);
 
-//        $survey->load([
-//            'questions' => fn ($q) => $q
-//                ->with(['answers'])
-//                ->select(['questions.id', 'questions.description as question'])
-//        ]);
-
-
-
-//        $survey->questions->each(fn ($question) => $question->patient_answer = $patientAnswers[$question->id] ?? null);
-
-//        return SurveyResource::make($survey);
     }
 
     public function storeAnswer(Request $request,$surveyId)
@@ -95,21 +75,6 @@ class SurveyController extends Controller
                 'patient_id'=>$patient['token']->email
             ]);
         endforeach;
-
-
-
-
-        // $surveyService->checkIfExist($surveyId, $questionId, $patient->id);
-
-        // DB::transaction(function () use ($survey, $patient, $questionId) {
-        //     $survey->patientAnswers()->attach([
-        //         request('answer') => [
-        //             'patient_id' => $patient->id,
-        //             'question_id' => $questionId,
-        //         ]
-        //     ]);
-
-        // }, 2);
 
         return response()->json(['message'=>"Answer saved successfully"]);
     }
