@@ -2,9 +2,7 @@
 
 namespace App\Models;
 
-use App\Traits\HasAdminRole;
-use App\Traits\HasDoctorRole;
-use App\Traits\HasPatientRole;
+
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,9 +14,7 @@ class User extends Authenticatable implements \App\Firebase\Notifiable
     use HasApiTokens;
     use HasFactory;
     use Notifiable;
-    use HasPatientRole;
-    use HasAdminRole;
-    use HasDoctorRole;
+
 
     const ADMIN = 'admin';
     const PATIENT = 'patient';

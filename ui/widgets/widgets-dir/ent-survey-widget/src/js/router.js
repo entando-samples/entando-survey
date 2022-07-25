@@ -6,7 +6,9 @@ import SurveyIndexPage from "@/views/surveys/Index.vue";
 import SurveyFormPage from "@/views/surveys/Form.vue";
 import NotFoundPage from "@/views/errors/NotFound.vue";
 import AppLayout from "@/views/layouts/AppLayout.vue";
-import ErrorLayout from "@/views/layouts/ErrorLayout.vue";
+import Surveys from '@/views/answers/Surveys.vue';
+import SurveyDetail from '@/views/answers/SurveyDetail.vue';
+
 import VueRouter from "vue-router";
 
 const auth = {
@@ -22,6 +24,11 @@ const surveys = {
     index: SurveyIndexPage,
     form: SurveyFormPage,
 };
+
+const answers = {
+    index: Surveys,
+    form: SurveyDetail
+}
 
 const errors = {
     notFound: NotFoundPage,
@@ -63,6 +70,11 @@ const router = new VueRouter({
                     path: "surveys/:id",
                     name: "surveys.edit",
                     component: surveys.form,
+                },
+                {
+                    path: "my-surveys/:id",
+                    name: "my-survey-answer",
+                    component: answers.form,
                 },
                 {
                     path: "logout",

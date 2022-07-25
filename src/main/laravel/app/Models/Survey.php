@@ -4,9 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Staudenmeir\EloquentEagerLimit\HasEagerLimit;
 
 class Survey extends Model
@@ -23,10 +21,7 @@ class Survey extends Model
         'is_alertable' => 'boolean',
     ];
 
-    public function pathologies(): BelongsToMany
-    {
-        return $this->belongsToMany(Pathology::class);
-    }
+
 
     public function questions(): BelongsToMany
     {
@@ -76,14 +71,5 @@ class Survey extends Model
         return $q->where('title', 'like', $value);
     }
 
-    public function scopeWhereInPathologies($q, $ids)
-    {
-        if (!$ids) return $q;
 
-        if (!is_array($ids)) $ids = [$ids];
-
-        if (empty($ids)) return $q;
-
-        return $q->whereHas('pathologies', fn ($sq) => $sq->whereIn('pathologies.id', $ids));
-    }
 }

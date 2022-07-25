@@ -21,7 +21,12 @@ class KeycloakPublicKey
             return $next($request);
         } catch (\Exception $e){
             Log::error($e->getMessage());
-            abort(503);
+            if (!$request->expectsJson()) {
+                abort(401);
+            }
+            else {
+                return response()->json(['message'=>'Keycloak error'],500);
+            }
         }
 
 

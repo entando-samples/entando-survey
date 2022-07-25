@@ -29,5 +29,3 @@ services:
       - 9443:9443
       - 10990:10990
 
-    extra_hosts:
-      - "docker.for.mac.host.internal"

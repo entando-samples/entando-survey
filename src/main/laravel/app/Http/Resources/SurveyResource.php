@@ -18,8 +18,8 @@ class SurveyResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
-            'sent_at' => $this->pivot['created_at'],
-            'is_completed' => $this->pivot['completed_at'] ? true : false,
+//            'sent_at' => $this->pivot['created_at'],
+//            'is_completed' => $this->pivot['completed_at'] ? true : false,
             'questions' => QuestionResource::collection($this->questions)
         ];
     }

@@ -9,11 +9,11 @@ export default function useSurveys() {
     const validator = Validator({});
 
     const survey = reactive({
+        id: "",
         title: "",
         description: "",
         answers: [],
-        completed_at: null,
-        reviewed_at: null,
+        questions: [],
         note: null,
         sent_at: null,
         warning_answers: [],
@@ -22,26 +22,27 @@ export default function useSurveys() {
     function getSurveys(patientId) {
         loading.value = true;
 
-        return client.get(`/backend/patients/${patientId}/surveys`)
+        return client.get(`/my-surveys?patientId=${patientId}`)
             .then(({ data }) => {
                 surveys.value = data.data;
             })
             .finally(() => loading.value = false)
     }
 
-    function getSurvey(patientId, surveyId) {
+    function getSurvey(surveyId) {
         loading.value = true;
 
-        return client.get(`/backend/patients/${patientId}/surveys/${surveyId}`)
+        return client.get(`/surveys/${surveyId}`)
             .then(({ data }) => {
                 data = data.data;
-
+                survey.id = data.id,
                 survey.title = data.title;
                 survey.description = data.description;
-                survey.reviewed_at = data.pivot.reviewed_at;
-                survey.completed_at = data.pivot.completed_at;
-                survey.note = data.pivot.note;
-                survey.sent_at = data.pivot.created_at;
+                // survey.reviewed_at = data.pivot.reviewed_at;
+                // survey.completed_at = data.pivot.completed_at;
+                // survey.note = data.pivot.note;
+                // survey.sent_at = data.pivot.created_at;
+                survey.questions = data.questions
                 survey.warning_answers = (data.warning_answers || []).map(ans => ans.id);
                 survey.answers = data.patient_answers;
 
@@ -56,6 +57,14 @@ export default function useSurveys() {
 
     function remindSurvey(patientId, surveyId) {
         return client.post(`/backend/patients/${patientId}/surveys/${surveyId}/remind`)
+    }
+
+    async function saveSurveyResponse(data,surveyId) {
+        client.post('/surveys/response/'+surveyId,data)
+        .then(res=>{
+                console.log(res.data);
+            })
+
     }
 
     async function sendSurveyToPatient(data) {
@@ -85,6 +94,7 @@ export default function useSurveys() {
         getSurvey,
         remindSurvey,
         saveNote,
-        sendSurveyToPatient
+        sendSurveyToPatient,
+        saveSurveyResponse
     }
 }
