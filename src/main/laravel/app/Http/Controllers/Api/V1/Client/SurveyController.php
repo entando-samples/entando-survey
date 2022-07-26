@@ -8,6 +8,7 @@ use App\Models\PatientAnswer;
 use App\Models\PatientSurveyPivot;
 use App\Models\Survey;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class SurveyController extends Controller
 {
@@ -38,43 +39,44 @@ class SurveyController extends Controller
 
     }
 
-    public function storeAnswer(Request $request,$surveyId)
+    public function storeSingleAnswer(Request $request, $surveyId, $questionId)
     {
 
         $request->validate([
-            'value.*.question_id'=>'required|numeric|exists:questions,id',
-            'value.*.answer_id'=>'required|numeric|exists:answers,id',
+            'answer'=>'required|numeric|exists:answers,id',
         ]);
 
         $survey = Survey::find($surveyId);
-        if(!$survey):
+        if(!$survey) {
             return response()->json(['message'=>'Survey not found'],404);
-        endif;
+        }
 
         $patient = auth()->user();
 
-        $surveyCompleted = PatientSurveyPivot::where('patient_id',$patient['token']->email)
+        $surveyExists = PatientSurveyPivot::where('patient_id', $patient['token']->sub)
             ->where('survey_id',$surveyId)
             ->count();
-        if ($surveyCompleted){
-            return response()->json(['message'=>'Survey already completed'],409);
+        if ($surveyExists) {
+            $answerExists = PatientAnswer::where('patient_id', $patient['token']->sub)
+                ->where('survey_id',$surveyId)
+                ->where('question_id', $questionId)
+                ->count();
+            if ($answerExists) {
+                return response()->json(['message'=>'Answer already saved'], 409);
+            }
+        } else {
+            PatientSurveyPivot::create([
+                'patient_id'=>$patient['token']->sub,
+                'survey_id'=>$surveyId
+            ]);
         }
 
-
-        PatientSurveyPivot::create([
-            'patient_id'=>$patient['token']->email,
-            'survey_id'=>$surveyId
+        PatientAnswer::create([
+            'survey_id'=>$surveyId,
+            'question_id'=>$questionId,
+            'answer_id'=>$request->answer,
+            'patient_id'=>$patient['token']->sub
         ]);
-
-        foreach ($request->value as $answers):
-
-            PatientAnswer::create([
-                'survey_id'=>$surveyId,
-                'question_id'=>$answers['question_id'],
-                'answer_id'=>$answers['answer_id'],
-                'patient_id'=>$patient['token']->email
-            ]);
-        endforeach;
 
         return response()->json(['message'=>"Answer saved successfully"]);
     }
