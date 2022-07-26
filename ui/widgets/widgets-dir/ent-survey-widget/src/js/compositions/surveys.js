@@ -40,9 +40,7 @@ export default function useSurveys() {
 
         survey.title = response.data.data.title;
         survey.description = response.data.data.description;
-        survey.pathologies = response.data.data.pathologies.map((item) => item.id);
         survey.questions = response.data.data.questions.map((item) => item.id);
-        survey.warning_answers = response.data.data.warning_answers.map((item) => item.id);
     }
 
     function saveSurvey(data) {

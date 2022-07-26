@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-page-header title="Questionari da protocollo" />
+    <b-page-header title="Questionari" />
 
     <div class="flex items-start space-x-7">
       <div class="w-2/5 space-y-2">

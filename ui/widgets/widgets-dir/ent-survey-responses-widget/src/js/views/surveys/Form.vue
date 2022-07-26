@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-page-header title="Crea un nuovo questionario"></b-page-header>
+        <b-page-header title="Nuovo questionario"></b-page-header>
         <b-block class="mt-2 py-5" v-if="flatErrors.length" title="Errors:">
             <ul class="list-disc text-red-500">
                 <li class="ml-8" v-for="(message, idx) in flatErrors" :key="idx">
