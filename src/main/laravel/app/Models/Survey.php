@@ -21,7 +21,10 @@ class Survey extends Model
         'is_alertable' => 'boolean',
     ];
 
-
+    public function pathologies(): BelongsToMany
+    {
+        return $this->belongsToMany(Pathology::class);
+    }
 
     public function questions(): BelongsToMany
     {
