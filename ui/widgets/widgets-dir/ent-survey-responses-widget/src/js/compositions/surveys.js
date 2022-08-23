@@ -8,7 +8,6 @@ export default function useSurveys() {
     const survey = reactive({
         title: "Untitled survey",
         description: "",
-        pathologies: [],
         questions: [],
         warning_answers: [],
     });
@@ -20,11 +19,10 @@ export default function useSurveys() {
     async function getSurveys({
         page = 1,
         search = "",
-        pathologies = [],
     } = {}) {
         loading.value = true;
         const response = await client
-            .get("/backend/surveys", { params: { page, search, pathologies } })
+            .get("/backend/surveys", { params: { page, search } })
             .finally(() => (loading.value = false));
 
         surveys.meta = response.data.meta;

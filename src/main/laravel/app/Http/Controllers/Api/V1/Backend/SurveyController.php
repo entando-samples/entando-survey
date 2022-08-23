@@ -36,10 +36,6 @@ class SurveyController extends Controller
         $survey = DB::transaction(function () use ($attributes) {
             $survey = Survey::query()->create($attributes);
 
-            if (isset($attributes['pathologies'])) {
-                $survey->pathologies()->sync($attributes['pathologies']);
-            }
-
             $survey->questions()->sync($attributes['questions']);
 
             if (isset($attributes['warning_answers'])) {
@@ -73,10 +69,6 @@ class SurveyController extends Controller
         $survey =  DB::transaction(function () use ($survey, $attributes) {
             $survey->update($attributes);
 
-            if (isset($attributes['pathologies'])) {
-                $survey->pathologies()->sync($attributes['pathologies']);
-            }
-
             if (isset($attributes['questions'])) {
                 $survey->questions()->sync($attributes['questions']);
             }
@@ -100,7 +92,6 @@ class SurveyController extends Controller
     public function destroy(Survey $survey)
     {
         DB::transaction(function () use ($survey) {
-            $survey->pathologies()->sync([]);
             $survey->questions()->sync([]);
             $survey->warningAnswers()->sync([]);
 

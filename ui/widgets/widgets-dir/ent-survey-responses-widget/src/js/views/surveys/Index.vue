@@ -53,7 +53,7 @@
               <td class="px-2 py-3">
                 <div class="font-medium" style="max-width: 150px">
                   {{
-                    (survey.pathologies || [])
+                    ([])
                       .map((item) => item.title)
                       .join(", ")
                   }}

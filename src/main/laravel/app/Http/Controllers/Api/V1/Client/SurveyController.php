@@ -9,6 +9,7 @@ use App\Models\PatientSurveyPivot;
 use App\Models\Survey;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 
 class SurveyController extends Controller
 {
@@ -46,37 +47,40 @@ class SurveyController extends Controller
             'answer'=>'required|numeric|exists:answers,id',
         ]);
 
-        $survey = Survey::find($surveyId);
-        if(!$survey) {
-            return response()->json(['message'=>'Survey not found'],404);
+        $answerId = $request->answer;
+
+        if(!Survey::find($surveyId)->exists()) {
+            return response()->json(['message'=>'Survey not found'], 404);
         }
 
         $patient = auth()->user();
+        DB::transaction(function () use ($patient, $surveyId, $questionId, $answerId) {
 
-        $surveyExists = PatientSurveyPivot::where('patient_id', $patient['token']->sub)
-            ->where('survey_id',$surveyId)
-            ->count();
-        if ($surveyExists) {
-            $answerExists = PatientAnswer::where('patient_id', $patient['token']->sub)
-                ->where('survey_id',$surveyId)
-                ->where('question_id', $questionId)
-                ->count();
-            if ($answerExists) {
-                return response()->json(['message'=>'Answer already saved'], 409);
+            $surveyExists = PatientSurveyPivot::where('patient_id', $patient['token']->sub)
+                ->where('survey_id', $surveyId)
+                ->exists();
+            if ($surveyExists) {
+                $answerExists = PatientAnswer::where('patient_id', $patient['token']->sub)
+                    ->where('survey_id', $surveyId)
+                    ->where('question_id', $questionId)
+                    ->exists();
+                if ($answerExists) {
+                    return response()->json(['message'=>'Answer already saved'], 409);
+                }
+            } else {
+                PatientSurveyPivot::create([
+                    'patient_id'=> $patient['token']->sub,
+                    'survey_id'=> $surveyId
+                ]);
             }
-        } else {
-            PatientSurveyPivot::create([
-                'patient_id'=>$patient['token']->sub,
-                'survey_id'=>$surveyId
-            ]);
-        }
 
-        PatientAnswer::create([
-            'survey_id'=>$surveyId,
-            'question_id'=>$questionId,
-            'answer_id'=>$request->answer,
-            'patient_id'=>$patient['token']->sub
-        ]);
+            PatientAnswer::create([
+                'survey_id'=>$surveyId,
+                'question_id'=>$questionId,
+                'answer_id'=>$answerId,
+                'patient_id'=>$patient['token']->sub
+            ]);
+        });
 
         return response()->json(['message'=>"Answer saved successfully"]);
     }

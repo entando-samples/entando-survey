@@ -30,10 +30,6 @@ class SurveyRequest extends FormRequest
         return [
             'title' => [$sometimesIfUpdate, 'required', 'string', 'max:255'],
             'description' => [$sometimesIfUpdate, 'nullable', 'string'],
-            'pathologies' => ['sometimes', 'array'],
-            'pathologies.*' => [
-                'exists:pathologies,id'
-            ],
             'questions' => [$sometimesIfUpdate, 'required', 'array'],
             'questions.*' => [
                 'exists:questions,id'

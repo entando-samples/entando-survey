@@ -134,14 +134,14 @@ export default defineComponent({
     watch(formQuestionFilters, onFormQuestionFiltersChange);
 
     async function save() {
-        const listOfPrimise = listOfAnswers.value.map(a => {
-            return answerSurvey(root.$route.params.id, a.questionId, {answer: a.answerId})
+        for (let index = 0; index < listOfAnswers.value.length; index++) {
+          const element = listOfAnswers.value[index];
+          await answerSurvey(root.$route.params.id, element.questionId, {answer: element.answerId})
             .catch((err) => {
               Vue.toasted.error(err?.response?.data?.message || err.message);
             });
-        });
-        await Promise.all(listOfPrimise);
-        Vue.toasted.success("updated successfully");
+        }
+        Vue.toasted.success("Saved successfully");
         router.push({
           name: "surveys.index",
         });

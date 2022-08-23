@@ -12,7 +12,6 @@ export default function useDocuments() {
         cover_image: null,
         file: null,
         images: [],
-        pathologies: [],
         creator: null,
         created_at: null,
         last_updator: null,
@@ -34,7 +33,6 @@ export default function useDocuments() {
     async function getDocuments({
         page = 1,
         search = "",
-        pathologies = [],
     } = {}) {
         loading.value = true;
 
@@ -43,7 +41,6 @@ export default function useDocuments() {
                 params: {
                     page,
                     search,
-                    pathologies,
                 },
             })
             .finally(() => (loading.value = false));
@@ -89,9 +86,6 @@ export default function useDocuments() {
         document.cover_image = responseDoc.cover_image;
         document.file = responseDoc.file;
         document.images = responseDoc.images || [];
-        document.pathologies = (responseDoc.pathologies || []).map(
-            (item) => item.id
-        );
         document.creator = responseDoc.creator;
         document.created_at = responseDoc.created_at;
         document.last_updator = responseDoc.last_updator;

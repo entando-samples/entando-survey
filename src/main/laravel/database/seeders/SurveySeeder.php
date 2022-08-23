@@ -22,7 +22,6 @@ class SurveySeeder extends Seeder
             Survey::factory()
                 ->count(10)
                 ->afterCreating(function (Survey $survey) {
-                    $survey->pathologies()->attach(Pathology::inRandomOrder()->limit(3)->pluck('id')->toArray());
                     $questions = Question::inRandomOrder()->limit(3)->pluck('id')->toArray();
                     $survey->questions()->attach($questions);
 
