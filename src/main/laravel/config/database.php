@@ -83,7 +83,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => JDBCParsing(env('SPRING_DATASOURCE_URL'))['host'],
             'port' => JDBCParsing(env('SPRING_DATASOURCE_URL'))['port'],
-            'database' => JDBCParsing(env('SPRING_DATASOURCE_URL'))['database'],
+            'database' => env('SPRING_DATASOURCE_USERNAME', 'survey'),
             'username' => env('SPRING_DATASOURCE_USERNAME', 'forge'),
             'password' => env('SPRING_DATASOURCE_PASSWORD', ''),
             'charset' => 'utf8',
