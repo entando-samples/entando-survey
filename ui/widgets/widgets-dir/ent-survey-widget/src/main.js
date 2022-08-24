@@ -8,11 +8,25 @@ window.laravel = {
     "appUrl": process.env.VUE_APP_SERVER_SERVLET_CONTEXT_PATH
 };
 
+const KEYCLOAK_EVENT_TYPE = 'keycloak'
+const subscribeToWidgetEvent = (eventType, eventHandler) => {
+    window.addEventListener(eventType, eventHandler)
+
+    return () => {
+        window.removeEventListener(eventType, eventHandler)
+    }
+}
+
+
 class EntSurvey extends HTMLElement {
 
     connectedCallback() {
         this.mountPoint = document.createElement('span')
-        this.render()
+        subscribeToWidgetEvent(KEYCLOAK_EVENT_TYPE, (e) => {
+            if(e.detail.eventType==="onReady"){
+                this.render()
+            }
+        })
     }
 
     render() {
