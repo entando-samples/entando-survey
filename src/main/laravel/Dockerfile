@@ -57,3 +57,4 @@ EXPOSE 8081
 
 RUN a2enmod rewrite
 
+CMD [ "bash", "entrypoint.sh" ]
