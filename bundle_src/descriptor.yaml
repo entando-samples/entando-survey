@@ -1,8 +1,8 @@
 code: entando-survey
 description: Create and edit simple surveys
 components:
-#  plugins:
-#    - plugins/ent-survey-ms-plugin.yaml
+  plugins:
+    - plugins/ent-survey-ms-plugin.yaml
   widgets:
     - ui/widgets/widgets-dir/ent-survey-widget/ent-survey-widget-descriptor.yaml
     - ui/widgets/widgets-dir/ent-survey-responses-widget/ent-survey-responses-widget-descriptor.yaml
