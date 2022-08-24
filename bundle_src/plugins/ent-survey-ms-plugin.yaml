@@ -1,7 +1,7 @@
-image: CHANGE-IT/ent-vue-project-template:0.0.1-SNAPSHOT
-dbms: none
-ingressPath: "/ent-survey-api"
-healthCheckPath: "/actuator/health"
+image: germanogiudici/entando-survey:0.0.10-SNAPSHOT
+dbms: postgresql
+ingressPath: "/entando-test"
+healthCheckPath: "/api/healthcheck"
 roles:
   - "et-first-role"
   - "et-second-role"
