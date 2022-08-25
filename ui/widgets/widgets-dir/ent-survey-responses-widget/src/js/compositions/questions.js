@@ -23,7 +23,7 @@ export default function useQuestions() {
     } = {}) {
         loading.value = true;
         const response = await client
-            .get("/backend/questions", {
+            .get("/questions", {
                 params: {
                     page,
                     search,
@@ -63,10 +63,7 @@ export default function useQuestions() {
     }
 
     function getFilters() {
-        return client.get("/backend/questions/filters").then((res) => {
-            filters.protocols = res.data.data.protocols;
-            filters.questions = res.data.data.questions;
-        });
+        return [];
     }
 
     return {

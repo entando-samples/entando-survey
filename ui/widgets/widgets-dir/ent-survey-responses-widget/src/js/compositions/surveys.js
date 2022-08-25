@@ -22,7 +22,7 @@ export default function useSurveys() {
     } = {}) {
         loading.value = true;
         const response = await client
-            .get("/backend/surveys", { params: { page, search } })
+            .get("/surveys", { params: { page, search } })
             .finally(() => (loading.value = false));
 
         surveys.meta = response.data.meta;
@@ -33,7 +33,7 @@ export default function useSurveys() {
         loading.value = true;
 
         const response = await client
-            .get("/backend/surveys/" + id)
+            .get("/surveys/" + id)
             .finally(() => (loading.value = false));
         
         survey.title = response.data.data.title;
