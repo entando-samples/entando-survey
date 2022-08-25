@@ -19,7 +19,7 @@ class BackendPermission
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth::hasRole('survey', 'survey-admin')) {
+        if(Auth::hasRole(config('entando.entando_keycloak_client_id'), 'survey-admin')) {
             return $next($request);
         } else {
             return response('Forbidden', 403);
