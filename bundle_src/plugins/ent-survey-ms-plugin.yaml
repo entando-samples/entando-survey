@@ -3,5 +3,4 @@ dbms: postgresql
 ingressPath: "/entando-test"
 healthCheckPath: "/api/healthcheck"
 roles:
-  - "et-first-role"
-  - "et-second-role"
+  - "survey-admin"
