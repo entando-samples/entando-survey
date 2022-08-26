@@ -34,7 +34,7 @@ services:
       - APP_ENV=local
       - APP_DEBUG=true
     volumes:
-      - .:/var/www
+      #- .:/var/www uncomment if you want to use local php files (php locally installed), otherwise you need to build the app at every change
       - ./docker/php/conf.d/opcache.ini:/usr/local/etc/php/conf.d/opcache.ini
       - ./docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
       - ./.env:/var/www/html/.env
