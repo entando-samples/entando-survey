@@ -1,0 +1,17 @@
+code: entando_survey_query_demo
+parentCode: entando_survey_insert_demo
+titles:
+  en: Entando Survey Query Demo
+  it: Entando Survey Query Demo
+pageModel: entando-survey-template
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf8
+status: published
+widgets:
+  - code: ent-survey-responses-widget
+    config: null
+    pos: 0
+
