@@ -6,6 +6,7 @@
       <div class="w-full flex items-center justify-between">
         <portal-target name="header"></portal-target>
 
+<!--
         <div class="flex items-center space-x-5 text-primary">
           <div class="flex items-center">
             <svg
@@ -20,10 +21,10 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <!--drop down -->
+            &lt;!&ndash;drop down &ndash;&gt;
             <div>
               <v-dropdown placement="right">
-                <!-- Button content -->
+                &lt;!&ndash; Button content &ndash;&gt;
                 <template v-slot:button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +41,10 @@
                 </template>
               </v-dropdown>
             </div>
-            <!--drop down ends -->
+            &lt;!&ndash;drop down ends &ndash;&gt;
           </div>
         </div>
+-->
       </div>
     </div>
   </header>
