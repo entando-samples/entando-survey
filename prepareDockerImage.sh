@@ -4,7 +4,7 @@ echo ""
 echo "Building project and Docker image "
 #todo export as global variable
 #todo manage version
-export MY_IMAGE=germanogiudici/entando-survey:0.0.15-SNAPSHOT
+export MY_IMAGE=entandopsdh/entando-survey:0.0.1
 
 docker build -t ${MY_IMAGE} -f src/main/laravel/Dockerfile src/main/laravel
 echo "Built $MY_IMAGE"
