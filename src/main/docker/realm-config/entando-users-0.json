@@ -1,29 +1,29 @@
 {
   "realm" : "entando",
   "users" : [ {
-    "id" : "af32f4ab-0ee4-4cbb-bfef-4a7fdc0f52d4",
-    "createdTimestamp" : 1636652043300,
-    "username" : "et-first-role",
+    "id" : "0b4804b9-a81f-4b85-b88e-02dcad273d87",
+    "createdTimestamp" : 1661775456339,
+    "username" : "survey-admin",
     "enabled" : true,
     "totp" : false,
     "emailVerified" : false,
     "credentials" : [ {
       "type" : "password",
-      "hashedSaltedValue" : "Szld5PGy6rUOHCceH4QwGz53bcjA0MmFf5cMQ4hzlfmrLJwXP+A9QpirGOGDRYzgAMCjdhu/BP4Hzhp49zaa3Q==",
-      "salt" : "VrJWwcdM2p4r+K9e408ZQA==",
+      "hashedSaltedValue" : "uiiSa2NiirZ9ji/2asPhg594qwzhX7ErPrWXZ4VmcUMkYd7w6iABVlz4v9uTqSv1QYctkmKNkiQqytl+DjDtBw==",
+      "salt" : "Lcouzu1DIrUlWYuNkW/r4A==",
       "hashIterations" : 27500,
       "counter" : 0,
       "algorithm" : "pbkdf2-sha256",
       "digits" : 0,
       "period" : 0,
-      "createdDate" : 1636652052226,
+      "createdDate" : 1661775472170,
       "config" : { }
     } ],
     "disableableCredentialTypes" : [ "password" ],
     "requiredActions" : [ ],
     "realmRoles" : [ "offline_access", "uma_authorization" ],
     "clientRoles" : {
-      "internal" : [ "et-first-role" ],
+      "internal" : [ "survey-admin" ],
       "account" : [ "manage-account", "view-profile" ]
     },
     "notBefore" : 0,

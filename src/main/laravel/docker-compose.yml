@@ -1,4 +1,3 @@
-version: "3"
 services:
   # nginx:
   #   image: nginx:alpine
@@ -38,9 +37,6 @@ services:
       - ./docker/php/conf.d/opcache.ini:/usr/local/etc/php/conf.d/opcache.ini
       - ./docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
       - ./.env:/var/www/html/.env
-    # depends_on:
-    #     pgsql:
-    #         condition: service_healthy
     depends_on:
       - pgsql
   pgsql:
@@ -60,4 +56,4 @@ services:
     #   timeout: 5s
     #   retries: 5
     volumes:
-      - ./docker/postgresql/postgresql-data:/var/lib/pgsql
+        - ./docker/postgresql/postgresql-data:/var/lib/pgsql
