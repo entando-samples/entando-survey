@@ -3,6 +3,7 @@ Survey manager PBC, composed by a PHP back end microservice and two VUEJS microf
 
 The bundle installation creates **Entando Survey Insert Demo** and **Entando Survey Query Demo** pages
 
+To use the PBC, after the installation you have to add survey-admin role to one or more users
 
 
 # Deployment and installation
