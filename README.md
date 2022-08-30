@@ -1,3 +1,7 @@
+# Features
+Survey manager PBC, composed by a PHP back end microservice and two VUEJS microfrontends 
+
+
 # Deployment and installation
 With this configuration, you can use the ent cli (https://dev.entando.org/next/docs/reference/entando-cli.html) to perform the full deployment sequence:
 
@@ -40,8 +44,7 @@ if you have PHP locally installed, you can add the libraries to the laravel fold
 * `ent prj fe-test-run` - to run the React frontend
 
 ## Local setup
-* Access Keycloak at http://localhost:9080/auth/
-* Access Springboot at http://localhost:8081/swagger-ui.html
+* Access Keycloak at http://localhost:9080/auth/ (admin/admin)
 * Use client web_app when authorizing the microservices
 
 ## Notes
