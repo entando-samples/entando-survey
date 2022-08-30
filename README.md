@@ -1,5 +1,5 @@
 # Features
-Survey manager PBC, composed by a PHP back end microservice and two VUEJS microfrontends 
+Survey manager PBC, composed by a PHP back end microservice and two VUEJS microfrontends. Integration with keycloak and the postgres pod autodeployed by entando 
 
 
 # Deployment and installation
