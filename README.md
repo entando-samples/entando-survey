@@ -1,5 +1,8 @@
 # Features
-Survey manager PBC, composed by a PHP back end microservice and two VUEJS microfrontends. Integration with keycloak and the postgres pod autodeployed by entando 
+Survey manager PBC, composed by a PHP back end microservice and two VUEJS microfrontends. Integration with keycloak and the postgres pod autodeployed by entando.
+
+The bundle installation creates **Entando Survey Insert Demo** and **Entando Survey Query Demo** pages
+
 
 
 # Deployment and installation
