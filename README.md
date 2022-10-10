@@ -1,13 +1,17 @@
 # Features
-Survey manager PBC, composed by a PHP back end microservice and two VUEJS microfrontends. Integration with keycloak and the postgres pod autodeployed by entando.
+The survey manager PBC includes:
+* a PHP back end microservice
+* two Vue.js microfrontends
+* integration with Keycloak and PostgreSQL
+* two Entando pages - **Entando Survey Insert Demo** and **Entando Survey Query Demo** pages
 
-The bundle installation creates **Entando Survey Insert Demo** and **Entando Survey Query Demo** pages
+Note: the current admin interface is only available in Italian.
 
-To use the PBC, after the installation you have to add survey-admin role to one or more users
-
+## Configuration
+* After installation, add the survey-admin role to one or more users to enable managing surveys and survey questions
 
 # Deployment and installation
-With this configuration, you can use the ent cli (https://dev.entando.org/next/docs/reference/entando-cli.html) to perform the full deployment sequence:
+With this configuration, you can use the ent cli (https://developer.entando.org) to perform the full deployment sequence:
 
 # Development notes
 ## Tips
